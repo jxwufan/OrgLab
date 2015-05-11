@@ -1,0 +1,5 @@
+sch2hdl,-sympath,E:/organization/Org_Lab3/ipcore_dir,-intstyle,ise,-family,spartan6,-verilog,E:/organization/Org_Lab3/Data_path.vf,-w,E:/organization/Org_Lab3/Data_path.sch
+sch2hdl,-sympath,E:/organization/Org_Lab3/ipcore_dir,-intstyle,ise,-family,spartan6,-verilog,E:/organization/Org_Lab3/SCPU.vf,-w,E:/organization/Org_Lab3/SCPU.sch
+sch2hdl,-sympath,E:/organization/Org_Lab3/ipcore_dir,-intstyle,ise,-family,spartan6,-verilog,E:/organization/Org_Lab3/Org_Lab3.vf,-w,E:/organization/Org_Lab3/Org_Lab3.sch
+sch2hdl,-sympath,E:/organization/Org_Lab3/ipcore_dir,-intstyle,ise,-family,spartan6,-verilog,E:/organization/Org_Lab3/SCPU.vf,-w,E:/organization/Org_Lab3/SCPU.sch
+sch2hdl,-sympath,E:/organization/Org_Lab3/ipcore_dir,-intstyle,ise,-family,spartan6,-verilog,E:/organization/Org_Lab3/Org_Lab3.vf,-w,E:/organization/Org_Lab3/Org_Lab3.sch

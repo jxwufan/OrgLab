@@ -1,0 +1,870 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'Org_Lab3'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon May 11 23:21:00 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                   176 out of  18,224    1%
+    Number used as Flip Flops:                 176
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        550 out of   9,112    6%
+    Number used as logic:                      511 out of   9,112    5%
+      Number using O6 output only:             404
+      Number using O5 output only:              39
+      Number using O5 and O6:                   68
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:     39
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        39
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   230 out of   2,278   10%
+  Number of MUXCYs used:                       320 out of   4,556    7%
+  Number of LUT Flip Flop pairs used:          571
+    Number with an unused Flip Flop:           395 out of     571   69%
+    Number with an unused LUT:                  21 out of     571    3%
+    Number of fully used LUT-FF pairs:         155 out of     571   27%
+    Number of unique control sets:              11
+    Number of slice register sites lost
+      to control set restrictions:              48 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        33 out of     232   14%
+    Number of LOCed IOBs:                       33 out of      33  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         4 out of      32   12%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.46
+
+Peak Memory Usage:  285 MB
+Total REAL time to MAP completion:  16 secs 
+Total CPU time to MAP completion:   11 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_39 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network U7/GPIOf0<21> has no load.
+INFO:LIT:395 - The above info message is repeated 25 more times for the
+   following (max. 5 shown):
+   U7/GPIOf0<20>,
+   U7/GPIOf0<19>,
+   U7/GPIOf0<18>,
+   U7/GPIOf0<17>,
+   U7/GPIOf0<16>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 101 block(s) removed
+ 208 block(s) optimized away
+ 106 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "U8/clkdiv<31>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_xor<31>" (XOR) removed.
+  The signal "U8/Result<31>" is sourceless and has been removed.
+   Sourceless block "U8/clkdiv_31" (FF) removed.
+The signal "U8/clkdiv<30>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_cy<30>_rt" (ROM) removed.
+  The signal "U8/Mcount_clkdiv_cy<30>_rt" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_cy<30>" (MUX) removed.
+    The signal "U8/Mcount_clkdiv_cy<30>" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_xor<30>" (XOR) removed.
+    The signal "U8/Result<30>" is sourceless and has been removed.
+     Sourceless block "U8/clkdiv_30" (FF) removed.
+The signal "U8/clkdiv<29>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_cy<29>_rt" (ROM) removed.
+  The signal "U8/Mcount_clkdiv_cy<29>_rt" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_cy<29>" (MUX) removed.
+    The signal "U8/Mcount_clkdiv_cy<29>" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_xor<29>" (XOR) removed.
+    The signal "U8/Result<29>" is sourceless and has been removed.
+     Sourceless block "U8/clkdiv_29" (FF) removed.
+The signal "U8/clkdiv<28>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_cy<28>_rt" (ROM) removed.
+  The signal "U8/Mcount_clkdiv_cy<28>_rt" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_cy<28>" (MUX) removed.
+    The signal "U8/Mcount_clkdiv_cy<28>" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_xor<28>" (XOR) removed.
+    The signal "U8/Result<28>" is sourceless and has been removed.
+     Sourceless block "U8/clkdiv_28" (FF) removed.
+The signal "U8/clkdiv<27>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_cy<27>_rt" (ROM) removed.
+  The signal "U8/Mcount_clkdiv_cy<27>_rt" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_cy<27>" (MUX) removed.
+    The signal "U8/Mcount_clkdiv_cy<27>" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_xor<27>" (XOR) removed.
+    The signal "U8/Result<27>" is sourceless and has been removed.
+     Sourceless block "U8/clkdiv_27" (FF) removed.
+The signal "U8/clkdiv<26>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_cy<26>_rt" (ROM) removed.
+  The signal "U8/Mcount_clkdiv_cy<26>_rt" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_cy<26>" (MUX) removed.
+    The signal "U8/Mcount_clkdiv_cy<26>" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_xor<26>" (XOR) removed.
+    The signal "U8/Result<26>" is sourceless and has been removed.
+     Sourceless block "U8/clkdiv_26" (FF) removed.
+The signal "U8/clkdiv<25>" is sourceless and has been removed.
+ Sourceless block "U8/Mcount_clkdiv_cy<25>_rt" (ROM) removed.
+  The signal "U8/Mcount_clkdiv_cy<25>_rt" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_cy<25>" (MUX) removed.
+    The signal "U8/Mcount_clkdiv_cy<25>" is sourceless and has been removed.
+   Sourceless block "U8/Mcount_clkdiv_xor<25>" (XOR) removed.
+    The signal "U8/Result<25>" is sourceless and has been removed.
+     Sourceless block "U8/clkdiv_25" (FF) removed.
+The signal "U8/Mcount_clkdiv_cy<24>" is sourceless and has been removed.
+The signal "U7/GPIOf0<21>" is sourceless and has been removed.
+The signal "U7/GPIOf0<20>" is sourceless and has been removed.
+The signal "U7/GPIOf0<19>" is sourceless and has been removed.
+The signal "U7/GPIOf0<18>" is sourceless and has been removed.
+The signal "U7/GPIOf0<17>" is sourceless and has been removed.
+The signal "U7/GPIOf0<16>" is sourceless and has been removed.
+The signal "U7/GPIOf0<15>" is sourceless and has been removed.
+The signal "U7/GPIOf0<14>" is sourceless and has been removed.
+The signal "U7/GPIOf0<13>" is sourceless and has been removed.
+The signal "U7/GPIOf0<12>" is sourceless and has been removed.
+The signal "U7/GPIOf0<11>" is sourceless and has been removed.
+The signal "U7/GPIOf0<10>" is sourceless and has been removed.
+The signal "U7/GPIOf0<9>" is sourceless and has been removed.
+The signal "U7/GPIOf0<8>" is sourceless and has been removed.
+The signal "U7/GPIOf0<7>" is sourceless and has been removed.
+The signal "U7/GPIOf0<6>" is sourceless and has been removed.
+The signal "U7/GPIOf0<5>" is sourceless and has been removed.
+The signal "U7/GPIOf0<4>" is sourceless and has been removed.
+The signal "U7/GPIOf0<3>" is sourceless and has been removed.
+The signal "U7/GPIOf0<2>" is sourceless and has been removed.
+The signal "U7/GPIOf0<1>" is sourceless and has been removed.
+The signal "U7/GPIOf0<0>" is sourceless and has been removed.
+The signal "U7/GPIOf0_and0000" is sourceless and has been removed.
+ Sourceless block "U7/GPIOf0_0" (FF) removed.
+ Sourceless block "U7/GPIOf0_1" (FF) removed.
+ Sourceless block "U7/GPIOf0_2" (FF) removed.
+ Sourceless block "U7/GPIOf0_3" (FF) removed.
+ Sourceless block "U7/GPIOf0_4" (FF) removed.
+ Sourceless block "U7/GPIOf0_5" (FF) removed.
+ Sourceless block "U7/GPIOf0_6" (FF) removed.
+ Sourceless block "U7/GPIOf0_7" (FF) removed.
+ Sourceless block "U7/GPIOf0_8" (FF) removed.
+ Sourceless block "U7/GPIOf0_9" (FF) removed.
+ Sourceless block "U7/GPIOf0_10" (FF) removed.
+ Sourceless block "U7/GPIOf0_11" (FF) removed.
+ Sourceless block "U7/GPIOf0_12" (FF) removed.
+ Sourceless block "U7/GPIOf0_13" (FF) removed.
+ Sourceless block "U7/GPIOf0_14" (FF) removed.
+ Sourceless block "U7/GPIOf0_15" (FF) removed.
+ Sourceless block "U7/GPIOf0_16" (FF) removed.
+ Sourceless block "U7/GPIOf0_17" (FF) removed.
+ Sourceless block "U7/GPIOf0_18" (FF) removed.
+ Sourceless block "U7/GPIOf0_19" (FF) removed.
+ Sourceless block "U7/GPIOf0_20" (FF) removed.
+ Sourceless block "U7/GPIOf0_21" (FF) removed.
+The signal "U10/counter_Ctrl_not0001" is sourceless and has been removed.
+The signal "U10/sq0_cmp_eq0000" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_22_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_21_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_20_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_19_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_18_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_17_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_14_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_16_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_15_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_13_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_12_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_11_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_10_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_9_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_8_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_7_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_6_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_5_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_4_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_3_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_2_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_1_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_0_mux0000_3" is sourceless and has been removed.
+The signal "U10/counter0_0_mux0002" is sourceless and has been removed.
+The signal "U10/counter0_32_xor0000" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_22_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_21_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_20_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_19_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_18_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_17_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_16_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_15_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_14_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_13_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_12_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_11_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_10_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_9_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_8_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_7_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_6_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_5_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_4_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_3_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_2_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_1_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_0_mux0000_3" (ROM) removed.
+ Sourceless block "U10/Mmux_counter0_30_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_30_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_30_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_30_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_29_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_29_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_29_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_29_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_28_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_28_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_28_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_28_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_27_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_27_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_27_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_27_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_26_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_26_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_26_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_26_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_25_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_25_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_25_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_25_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_24_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_24_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_24_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_24_mux0000_3" is sourceless and has been removed.
+ Sourceless block "U10/Mmux_counter0_23_mux0000_3" (ROM) removed.
+  The signal "U10/Mmux_counter0_23_mux0000_3/O" is sourceless and has been
+removed.
+   Sourceless block "U10/Mmux_counter0_23_mux0000_3/LUT4_L_BUF" (BUF) removed.
+    The signal "U10/Mmux_counter0_23_mux0000_3" is sourceless and has been removed.
+The signal "U10/Mmux_counter0_32_mux0000_3" is sourceless and has been removed.
+The signal "U10/N196" is sourceless and has been removed.
+The signal "U1/Controller/RegDst" is sourceless and has been removed.
+The signal "U1/Controller/RegWrite" is sourceless and has been removed.
+The signal "U1/Controller/CPU_MIO" is sourceless and has been removed.
+The signal "U1/Controller/MemtoReg" is sourceless and has been removed.
+The signal "U1/Controller/N22" is sourceless and has been removed.
+ Sourceless block "U1/Controller/RegWrite" (ROM) removed.
+The signal "U1/Controller/N31" is sourceless and has been removed.
+ Sourceless block "U1/Controller/RegDst" (ROM) removed.
+The signal "U1/DataPath/U3/N1" is sourceless and has been removed.
+The signal "U1/DataPath/U3/EPC_and0000" is sourceless and has been removed.
+ Sourceless block "U1/DataPath/U3/int_act" (FF) removed.
+  The signal "U1/DataPath/U3/int_act" is sourceless and has been removed.
+   Sourceless block "U1/DataPath/U3/int_clr1" (ROM) removed.
+    The signal "U1/DataPath/U3/int_clr" is sourceless and has been removed.
+The signal "U1/DataPath/U3/int_en_mux0000" is sourceless and has been removed.
+Unused block "U1/Controller/MemtoReg_cmp_eq00001" (ROM) removed.
+Unused block "U1/Controller/RegDst_SW1" (ROM) removed.
+Unused block "U1/Controller/RegWrite_SW0" (ROM) removed.
+Unused block "U1/Controller/XST_GND" (ZERO) removed.
+Unused block "U10/Mmux_counter0_31_mux0000_2_f5_SW0_G" (ROM) removed.
+Unused block "U10/Mmux_counter0_32_mux0000_3" (ROM) removed.
+Unused block "U10/Mxor_counter0_32_xor0000_Result1" (ROM) removed.
+Unused block "U10/counter0_0_mux00021" (ROM) removed.
+Unused block "U7/GPIOf0_and00001" (ROM) removed.
+Unused block "U8/Mcount_clkdiv_cy<24>" (MUX) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FDCE 		U1/DataPath/U3/EPC_0
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_1
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_10
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_11
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_12
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_13
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_14
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_15
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_16
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_17
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_18
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_19
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_2
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_20
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_21
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_22
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_23
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_24
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_25
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_26
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_27
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_28
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_29
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_3
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_30
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_31
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_4
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_5
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_6
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_7
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_8
+   optimized to 0
+FDCE 		U1/DataPath/U3/EPC_9
+   optimized to 0
+LUT2 		U1/DataPath/U3/EPC_and00001
+   optimized to 0
+VCC 		U1/DataPath/U3/XST_VCC
+FDP 		U1/DataPath/U3/int_en
+   optimized to 1
+LUT2 		U1/DataPath/U3/int_en_mux00001
+   optimized to 1
+LUT2_D 		U1/DataPath/U3/int_en_mux00001_1
+   optimized to 1
+LOCALBUF 		U1/DataPath/U3/int_en_mux00001_1/LUT2_D_BUF
+FDC 		U1/DataPath/U3/int_req_r
+   optimized to 0
+LUT3 		U10/Mmux_counter0_31_mux0000_4_SW01
+   optimized to 0
+GND 		U10/XST_GND
+VCC 		U10/XST_VCC
+FDCE 		U10/counter0_Lock_0
+   optimized to 0
+FDCE 		U10/counter0_Lock_1
+   optimized to 0
+FDCE 		U10/counter0_Lock_10
+   optimized to 0
+FDCE 		U10/counter0_Lock_11
+   optimized to 0
+FDCE 		U10/counter0_Lock_12
+   optimized to 0
+FDCE 		U10/counter0_Lock_13
+   optimized to 0
+FDCE 		U10/counter0_Lock_14
+   optimized to 0
+FDCE 		U10/counter0_Lock_15
+   optimized to 0
+FDCE 		U10/counter0_Lock_16
+   optimized to 0
+FDCE 		U10/counter0_Lock_17
+   optimized to 0
+FDCE 		U10/counter0_Lock_18
+   optimized to 0
+FDCE 		U10/counter0_Lock_19
+   optimized to 0
+FDCE 		U10/counter0_Lock_2
+   optimized to 0
+FDCE 		U10/counter0_Lock_20
+   optimized to 0
+FDCE 		U10/counter0_Lock_21
+   optimized to 0
+FDCE 		U10/counter0_Lock_22
+   optimized to 0
+FDCE 		U10/counter0_Lock_23
+   optimized to 0
+FDCE 		U10/counter0_Lock_24
+   optimized to 0
+FDCE 		U10/counter0_Lock_25
+   optimized to 0
+FDCE 		U10/counter0_Lock_26
+   optimized to 0
+FDCE 		U10/counter0_Lock_27
+   optimized to 0
+FDCE 		U10/counter0_Lock_28
+   optimized to 0
+FDCE 		U10/counter0_Lock_29
+   optimized to 0
+FDCE 		U10/counter0_Lock_3
+   optimized to 0
+FDCE 		U10/counter0_Lock_30
+   optimized to 0
+FDCE 		U10/counter0_Lock_31
+   optimized to 0
+FDCE 		U10/counter0_Lock_4
+   optimized to 0
+FDCE 		U10/counter0_Lock_5
+   optimized to 0
+FDCE 		U10/counter0_Lock_6
+   optimized to 0
+FDCE 		U10/counter0_Lock_7
+   optimized to 0
+FDCE 		U10/counter0_Lock_8
+   optimized to 0
+FDCE 		U10/counter0_Lock_9
+   optimized to 0
+FDCE 		U10/counter_Ctrl_1
+   optimized to 0
+FDCE 		U10/counter_Ctrl_2
+   optimized to 0
+LUT3 		U10/counter_Ctrl_not00011
+   optimized to 0
+FDCE 		U10/sq0
+   optimized to 0
+LUT2 		U10/sq0_cmp_eq00001
+   optimized to 0
+GND 		U2/XST_GND
+VCC 		U2/XST_VCC
+GND 		U3/XST_GND
+VCC 		U3/XST_VCC
+LUT4 		U4/Mmux_Peripheral_in101
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in11
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in111
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in121
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in131
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in141
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in151
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in161
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in171
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in181
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in191
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in201
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in21
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in211
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in221
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in231
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in241
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in251
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in261
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in271
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in281
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in291
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in301
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in31
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in311
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in321
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in41
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in51
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in61
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in71
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in81
+   optimized to 0
+LUT4 		U4/Mmux_Peripheral_in91
+   optimized to 0
+LUT2 		U4/ram_data_in<0>1
+   optimized to 0
+LUT2 		U4/ram_data_in<10>1
+   optimized to 0
+LUT2 		U4/ram_data_in<11>1
+   optimized to 0
+LUT2 		U4/ram_data_in<12>1
+   optimized to 0
+LUT2 		U4/ram_data_in<13>1
+   optimized to 0
+LUT2 		U4/ram_data_in<14>1
+   optimized to 0
+LUT2 		U4/ram_data_in<15>1
+   optimized to 0
+LUT2 		U4/ram_data_in<16>1
+   optimized to 0
+LUT2 		U4/ram_data_in<17>1
+   optimized to 0
+LUT2 		U4/ram_data_in<18>1
+   optimized to 0
+LUT2 		U4/ram_data_in<19>1
+   optimized to 0
+LUT2 		U4/ram_data_in<1>1
+   optimized to 0
+LUT2 		U4/ram_data_in<20>1
+   optimized to 0
+LUT2 		U4/ram_data_in<21>1
+   optimized to 0
+LUT2 		U4/ram_data_in<22>1
+   optimized to 0
+LUT2 		U4/ram_data_in<23>1
+   optimized to 0
+LUT2 		U4/ram_data_in<24>1
+   optimized to 0
+LUT2 		U4/ram_data_in<25>1
+   optimized to 0
+LUT2 		U4/ram_data_in<26>1
+   optimized to 0
+LUT2 		U4/ram_data_in<27>1
+   optimized to 0
+LUT2 		U4/ram_data_in<28>1
+   optimized to 0
+LUT2 		U4/ram_data_in<29>1
+   optimized to 0
+LUT2 		U4/ram_data_in<2>1
+   optimized to 0
+LUT2 		U4/ram_data_in<30>1
+   optimized to 0
+LUT2 		U4/ram_data_in<31>1
+   optimized to 0
+LUT2 		U4/ram_data_in<3>1
+   optimized to 0
+LUT2 		U4/ram_data_in<4>1
+   optimized to 0
+LUT2 		U4/ram_data_in<5>1
+   optimized to 0
+LUT2 		U4/ram_data_in<6>1
+   optimized to 0
+LUT2 		U4/ram_data_in<7>1
+   optimized to 0
+LUT2 		U4/ram_data_in<8>1
+   optimized to 0
+LUT2 		U4/ram_data_in<9>1
+   optimized to 0
+LUT4 		U5/Disp_num_mux0001<30>1_SW0
+   optimized to 0
+LUT4 		U5/Disp_num_mux0001<31>1_SW0
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_3_f5
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_3_f5_0
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_3_f5_1
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_3_f5_2
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_4
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_41
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_42
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_43
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_5
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_51
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_52
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_53
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_54
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_55
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_56
+   optimized to 0
+LUT3 		U5/Mmux_blink_out_mux0000_57
+   optimized to 0
+LUT3 		U5/Mmux_point_out_mux0000_2_f6
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_2_f6_0
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_2_f6_1
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_2_f6_2
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_3_f5
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_3_f5_0
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_3_f5_1
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_3_f5_2
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_4
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_41
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_42
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_43
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_4_f5
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_4_f5_0
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_4_f5_1
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_4_f5_2
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_5
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_51
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_52
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_53
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_54
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_55
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_56
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_57
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_6
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_61
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_62
+   optimized to 1
+LUT3 		U5/Mmux_point_out_mux0000_63
+   optimized to 1
+LUT4 		U5/blink_out_mux0001<0>1_SW0
+   optimized to 0
+LUT4 		U5/blink_out_mux0001<1>1_SW0
+   optimized to 0
+LUT4 		U5/blink_out_mux0001<2>1_SW0
+   optimized to 0
+LUT4 		U5/blink_out_mux0001<3>1_SW0
+   optimized to 0
+FDCE_1 		U7/LED_0
+   optimized to 0
+FDCE_1 		U7/LED_2
+   optimized to 0
+FDCE_1 		U7/LED_4
+   optimized to 0
+FDCE_1 		U7/LED_6
+   optimized to 0
+FDCE_1 		U7/LED_7
+   optimized to 0
+FDCE_1 		U7/counter_set_0
+   optimized to 0
+FDCE_1 		U7/counter_set_1
+   optimized to 0
+GND 		U8/XST_GND
+VCC 		U8/XST_VCC
+VCC 		XLXI_11
+GND 		XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AN<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AN<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AN<2>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AN<3>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| BTN<0>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| BTN<1>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| BTN<2>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| BTN<3>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| LED<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SW<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| SW<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| clk_50mhz                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

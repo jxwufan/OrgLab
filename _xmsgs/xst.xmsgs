@@ -5,13 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/fan/code/test/Org_Lab3/SCPU_ctrl.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">SCPU_ctrl</arg>&gt; remains a black box.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/fan/code/test/Org_Lab3/Decode_pc_Int.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Decode_pc_Int</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 123: Net &lt;<arg fmt="%s" index="1">pc_4[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 123: Net &lt;<arg fmt="%s" index="1">pc_4[31]</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/fan/code/test/Org_Lab3/ipcore_dir/ROM_B.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ROM_B</arg>&gt; remains a black box.
@@ -47,6 +44,9 @@
 <msg type="warning" file="HDLCompiler" num="552" delta="old" >"/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 312: Input port <arg fmt="%s" index="1">MIO_ready</arg> is not connected on this instance
 </msg>
 
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">MIO_ready</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">U1</arg>&apos;, is tied to GND.
+</msg>
+
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/fan/code/test/Org_Lab3/Org_Lab3.vf</arg>&quot; line <arg fmt="%s" index="2">312</arg>: Output port &lt;<arg fmt="%s" index="3">CPU_MIO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
@@ -65,10 +65,13 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INT</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/fan/code/test/Org_Lab3/Org_Lab3.vf</arg>&quot; line <arg fmt="%s" index="2">143</arg>: Output port &lt;<arg fmt="%s" index="3">overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">MIO_ready</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">pc_4</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/fan/code/test/Org_Lab3/Org_Lab3.vf</arg>&quot; line <arg fmt="%s" index="2">143</arg>: Output port &lt;<arg fmt="%s" index="3">overflow</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pc_4</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">overflow</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.

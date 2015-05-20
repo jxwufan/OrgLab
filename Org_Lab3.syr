@@ -185,7 +185,6 @@ Elaborating module <Org_Lab3>.
 Elaborating module <SCPU_MUSER_Org_Lab3>.
 
 Elaborating module <SCPU_ctrl>.
-WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/SCPU_ctrl.v" Line 21: Empty module <SCPU_ctrl> remains a black box.
 
 Elaborating module <Data_path_MUSER_Org_Lab3>.
 
@@ -266,6 +265,7 @@ WARNING:HDLCompiler:552 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 312: I
 
 Synthesizing Unit <Org_Lab3>.
     Related source file is "/home/fan/code/test/Org_Lab3/Org_Lab3.vf".
+WARNING:Xst:2898 - Port 'MIO_ready', unconnected in block instance 'U1', is tied to GND.
 INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 312: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 381: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 393: Output port <button_pulse> of the instance <U9> is unconnected or connected to loadless signal.
@@ -281,6 +281,13 @@ WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and lef
     Summary:
 	no macro.
 Unit <SCPU_MUSER_Org_Lab3> synthesized.
+
+Synthesizing Unit <SCPU_ctrl>.
+    Related source file is "/home/fan/code/test/Org_Lab3/SCPU_ctrl.v".
+WARNING:Xst:647 - Input <MIO_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SCPU_ctrl> synthesized.
 
 Synthesizing Unit <Data_path_MUSER_Org_Lab3>.
     Related source file is "/home/fan/code/test/Org_Lab3/Org_Lab3.vf".
@@ -454,7 +461,6 @@ Reading core <led_Dev_IO.ngc>.
 Reading core <Counter_x.ngc>.
 Reading core <ipcore_dir/ROM_B.ngc>.
 Reading core <seven_seg_dev.ngc>.
-Reading core <SCPU_ctrl.ngc>.
 Reading core <Decode_pc_Int.ngc>.
 Loading core <MIO_BUS> for timing and area information for instance <U4>.
 Loading core <clk_div> for timing and area information for instance <U8>.
@@ -464,7 +470,6 @@ Loading core <led_Dev_IO> for timing and area information for instance <U7>.
 Loading core <Counter_x> for timing and area information for instance <U10>.
 Loading core <ROM_B> for timing and area information for instance <U2>.
 Loading core <seven_seg_dev> for timing and area information for instance <U6>.
-Loading core <SCPU_ctrl> for timing and area information for instance <Controller>.
 Loading core <Decode_pc_Int> for timing and area information for instance <U3>.
 
 Synthesizing (advanced) Unit <Anti_jitter>.
@@ -589,22 +594,22 @@ Top Level Output File Name         : Org_Lab3.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3750
+# BELS                             : 3732
 #      AND2                        : 1
-#      GND                         : 7
+#      GND                         : 6
 #      INV                         : 39
 #      LUT1                        : 94
-#      LUT2                        : 152
+#      LUT2                        : 148
 #      LUT2_D                      : 1
-#      LUT3                        : 318
-#      LUT4                        : 442
+#      LUT3                        : 309
+#      LUT4                        : 429
 #      LUT4_L                      : 52
 #      LUT5                        : 1167
-#      LUT6                        : 742
+#      LUT6                        : 754
 #      MUXCY                       : 257
-#      MUXF5                       : 138
+#      MUXF5                       : 136
 #      MUXF6                       : 40
-#      MUXF7                       : 34
+#      MUXF7                       : 33
 #      VCC                         : 7
 #      XORCY                       : 259
 # FlipFlops/Latches                : 1304
@@ -635,14 +640,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1304  out of  18224     7%  
- Number of Slice LUTs:                 3007  out of   9112    33%  
-    Number used as Logic:              3007  out of   9112    33%  
+ Number of Slice LUTs:                 2993  out of   9112    32%  
+    Number used as Logic:              2993  out of   9112    32%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4112
-   Number with an unused Flip Flop:    2808  out of   4112    68%  
-   Number with an unused LUT:          1105  out of   4112    26%  
-   Number of fully used LUT-FF pairs:   199  out of   4112     4%  
+ Number of LUT Flip Flop pairs used:   4098
+   Number with an unused Flip Flop:    2794  out of   4098    68%  
+   Number with an unused LUT:          1105  out of   4098    26%  
+   Number of fully used LUT-FF pairs:   199  out of   4098     4%  
    Number of unique control sets:        20
 
 IO Utilization: 
@@ -707,27 +712,24 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_50mhz'
-  Clock period: 16.814ns (frequency: 59.473MHz)
-  Total number of paths / destination ports: 375185332 / 232
+  Clock period: 16.798ns (frequency: 59.529MHz)
+  Total number of paths / destination ports: 328032082 / 232
 -------------------------------------------------------------------------
-Delay:               16.814ns (Levels of Logic = 47)
-  Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+Delay:               16.798ns (Levels of Logic = 45)
+  Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Source Clock:      clk_50mhz falling
   Destination Clock: clk_50mhz falling
 
-  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA10    7   1.850   0.878  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<27>)
-     end scope: 'U2:douta<27>'
-     begin scope: 'U1/Controller:OPcode<1>'
-     LUT2:I0->O            2   0.203   0.617  ALU_Control<1>2_SW0 (N20)
-     LUT4:I3->O            4   0.205   0.684  ALU_Control<1>2 (N2)
-     LUT4:I3->O           37   0.205   1.591  ALUSrc_B1 (ALUSrc_B)
-     end scope: 'U1/Controller:ALUSrc_B'
-     LUT6:I3->O            3   0.205   0.651  U1/DataPath/XLXI_7/Mmux_o110 (U1/DataPath/XLXN_2<0>)
+     RAMB16BWER:CLKA->DOPA1  261   1.850   2.432  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<17>)
+     end scope: 'U2:douta<17>'
+     LUT6:I0->O            1   0.203   0.808  U1/DataPath/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_91 (U1/DataPath/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_91)
+     LUT6:I3->O            2   0.205   0.721  U1/DataPath/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_4 (U1/DataPath/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_4)
+     LUT6:I4->O            3   0.203   0.651  U1/DataPath/XLXI_7/Mmux_o110 (U1/DataPath/XLXN_2<0>)
      LUT6:I5->O            1   0.205   0.000  U1/DataPath/U1/XLXI_5/Madd__n0024_lut<0> (U1/DataPath/U1/XLXI_5/Madd__n0024_lut<0>)
      MUXCY:S->O            1   0.172   0.000  U1/DataPath/U1/XLXI_5/Madd__n0024_cy<0> (U1/DataPath/U1/XLXI_5/Madd__n0024_cy<0>)
      MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_5/Madd__n0024_cy<1> (U1/DataPath/U1/XLXI_5/Madd__n0024_cy<1>)
@@ -773,13 +775,13 @@ Delay:               16.814ns (Levels of Logic = 47)
      begin scope: 'U3:wea<0>'
      RAMB16BWER:WEA3           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                     16.814ns (5.970ns logic, 10.844ns route)
-                                       (35.5% logic, 64.5% route)
+    Total                     16.798ns (5.763ns logic, 11.035ns route)
+                                       (34.3% logic, 65.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U8/Clk_CPU'
   Clock period: 31.667ns (frequency: 31.579MHz)
-  Total number of paths / destination ports: 13511208498 / 1273
+  Total number of paths / destination ports: 13511184690 / 1273
 -------------------------------------------------------------------------
 Delay:               15.833ns (Levels of Logic = 47)
   Source:            U1/DataPath/U2/register_31_928 (FF)
@@ -883,9 +885,9 @@ Offset:              5.635ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.222   0.879  BTN_0_IBUF (BTN_0_IBUF)
-     LUT4:I1->O            1   0.205   0.580  U9/btn_temp[3]_sw_temp[7]_OR_136_o1 (U9/btn_temp[3]_sw_temp[7]_OR_136_o1)
-     LUT5:I4->O            2   0.205   0.617  U9/btn_temp[3]_sw_temp[7]_OR_136_o2 (U9/btn_temp[3]_sw_temp[7]_OR_136_o2)
-     LUT5:I4->O           32   0.205   1.291  U9/btn_temp[3]_sw_temp[7]_OR_136_o7 (U9/btn_temp[3]_sw_temp[7]_OR_136_o)
+     LUT4:I1->O            1   0.205   0.580  U9/btn_temp[3]_sw_temp[7]_OR_182_o1 (U9/btn_temp[3]_sw_temp[7]_OR_182_o1)
+     LUT5:I4->O            2   0.205   0.617  U9/btn_temp[3]_sw_temp[7]_OR_182_o2 (U9/btn_temp[3]_sw_temp[7]_OR_182_o2)
+     LUT5:I4->O           32   0.205   1.291  U9/btn_temp[3]_sw_temp[7]_OR_182_o7 (U9/btn_temp[3]_sw_temp[7]_OR_182_o)
      FDRE:R                    0.430          U9/counter_0
     ----------------------------------------
     Total                      5.635ns (2.267ns logic, 3.368ns route)
@@ -993,10 +995,10 @@ Clock to Setup on destination clock U8/Clk_CPU
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 N1             |    3.033|         |         |         |
-U8/Clk_CPU     |   17.229|         |   15.833|         |
+U8/Clk_CPU     |   16.984|         |   15.833|         |
 U8/clkdiv<7>   |    5.437|         |    5.717|         |
 U9/button_out_0|         |         |    2.954|         |
-clk_50mhz      |    5.726|   20.165|   18.786|         |
+clk_50mhz      |    5.726|   19.920|   18.770|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U8/clkdiv<7>
@@ -1015,21 +1017,21 @@ Clock to Setup on destination clock clk_50mhz
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 U8/Clk_CPU     |         |         |   13.862|         |
-clk_50mhz      |    5.169|         |   16.814|         |
+clk_50mhz      |    4.924|         |   16.798|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.41 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.07 secs
  
 --> 
 
 
-Total memory usage is 512956 kilobytes
+Total memory usage is 513008 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

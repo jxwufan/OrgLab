@@ -16,3 +16,66 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
 bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "E:/organization/Org_Lab3/Org_Lab3.xst" -ofn "E:/organization/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 
+xst -intstyle ise -ifn "/home/fan/code/test/Org_Lab3/Org_Lab3.xst" -ofn "/home/fan/code/test/Org_Lab3/Org_Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Lab3UCF.ucf -p xc6slx16-csg324-3 Org_Lab3.ngc Org_Lab3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Org_Lab3_map.ncd Org_Lab3.ngd Org_Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Org_Lab3_map.ncd Org_Lab3.ncd Org_Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Org_Lab3.twx Org_Lab3.ncd -o Org_Lab3.twr Org_Lab3.pcf -ucf Lab3UCF.ucf 
+bitgen -intstyle ise -f Org_Lab3.ut Org_Lab3.ncd 

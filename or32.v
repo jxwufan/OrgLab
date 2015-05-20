@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:53:06 03/12/2015 
+// Create Date:    11:39:42 04/10/2015 
 // Design Name: 
 // Module Name:    or32 
 // Project Name: 
@@ -18,12 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module or32(input [31:0] A,
-				input [31:0] B,
-				output[31:0] res
-    );
-	 
-	 assign res = A | B;
+module or32(
+	input [31:0] A,
+	input [31:0] B,
+	output [31:0] res
+	);
 
+	assign res = A | B;
 
 endmodule

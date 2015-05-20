@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    13:40:48 03/12/2015 
+// Create Date:    11:38:03 04/10/2015 
 // Design Name: 
 // Module Name:    and32 
 // Project Name: 
@@ -18,10 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module and32(input [31:0] A,
-				 input [31:0] B,
-				 output [31:0] res
-    );
+module and32(
+	input [31:0] A,
+	input [31:0] B,
+	output [31:0] res
+	);
+	
 	assign res = A & B;
 
 endmodule

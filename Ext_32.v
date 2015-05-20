@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:21:00 03/12/2015 
+// Create Date:    00:14:22 04/18/2015 
 // Design Name: 
 // Module Name:    Ext_32 
 // Project Name: 
@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Ext_32(input [15:0] imm_16,
-				  output [31:0] Imm_32
-    );
-	 
-	 assign Imm_32 = {{16{imm_16[15]}}, imm_16};
+module Ext_32(
+	input [15:0] imm_16,
+	output [31:0] Imm_32
+	);
 
+	assign Imm_32 = {{16{imm_16[15]}}, imm_16};
 
 endmodule

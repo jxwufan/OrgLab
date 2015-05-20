@@ -24,7 +24,7 @@ module mux2to1_32(input [31:0] a,
 					  output [31:0] o
     );
 	 
-	 assign o = ({32{!sel}} & a) | ({32{sel}} & b);
+	 assign o = (sel) ? a : b;
 
 
 endmodule

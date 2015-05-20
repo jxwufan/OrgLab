@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    13:29:55 03/12/2015 
+// Create Date:    00:19:32 04/18/2015 
 // Design Name: 
 // Module Name:    add_32 
 // Project Name: 
@@ -18,11 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module add_32(input [31:0] a,
-				  input [31:0] b,
-				  output [31:0] c
-    );
-
+module add_32(
+	input [31:0] a,
+	input [31:0] b,
+	output [31:0] c
+	);
+	
 	assign c = a + b;
 
 endmodule

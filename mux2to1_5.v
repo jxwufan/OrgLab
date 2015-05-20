@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    11:10:45 03/11/2015 
+// Create Date:    00:21:56 04/18/2015 
 // Design Name: 
 // Module Name:    mux2to1_5 
 // Project Name: 
@@ -18,13 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mux2to1_5(input [4:0] a,
-					  input [4:0] b,
-					  input sel,
-					  output [4:0] o
-    );
-	 
-	 assign o = ({5{!sel}} & a) | ({5{sel}} & b);
+module mux2to1_5(
+	input [4:0] a,
+	input [4:0] b,
+	input sel,
+	output [4:0] o
+	);
 
+	assign o = (sel)? a: b;
 
 endmodule

@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:17:49 03/12/2015 
+// Create Date:    14:06:16 03/13/2015 
 // Design Name: 
 // Module Name:    or_bit_32 
 // Project Name: 
@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module or_bit_32(input [31:0] A,
-					  output o
-    );
-	 
-	 assign o = !(|A);
-
+module or_bit_32(
+	input [31:0] A,
+	output o
+	);
+	
+	assign o = ~(|A);
 
 endmodule

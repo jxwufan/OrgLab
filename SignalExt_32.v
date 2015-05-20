@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:22:41 03/12/2015 
+// Create Date:    14:01:20 03/13/2015 
 // Design Name: 
 // Module Name:    SignalExt_32 
 // Project Name: 
@@ -18,10 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SignalExt_32(input S,
-						  output [31:0] So
-    );
-	 assign So = {32{S}};
-
+module SignalExt_32(
+	input S,
+	output [31:0] So
+	);
+	
+	assign So = {32{S}};
 
 endmodule

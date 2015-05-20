@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:58:35 03/12/2015 
+// Create Date:    11:41:26 04/10/2015 
 // Design Name: 
 // Module Name:    xor32 
 // Project Name: 
@@ -18,12 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module xor32(input [31:0] A,
-				 input [31:0] B,
-				 output [31:0] res
-    );
-	 
-	 assign res = A ^ B;
+module xor32(
+	input [31:0] A,
+	input [31:0] B,
+	output [31:0] res
+	);
 
+	assign res = A ^ B;
 
 endmodule

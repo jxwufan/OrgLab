@@ -12,17 +12,9 @@
         <signal name="zero" />
         <signal name="overflow" />
         <signal name="A(31:0)" />
-        <signal name="XLXN_7" />
-        <signal name="XLXN_8(31:0)" />
         <signal name="ALU_operation(2)" />
         <signal name="XLXN_12(31:0)" />
-        <signal name="XLXN_14(31:0)" />
         <signal name="XLXN_15(31:0)" />
-        <signal name="XLXN_16(31:0)" />
-        <signal name="XLXN_17(31:0)" />
-        <signal name="XLXN_18(31:0)" />
-        <signal name="XLXN_19(31:0)" />
-        <signal name="XLXN_20(31:0)" />
         <signal name="S(32:0)" />
         <signal name="S(31:0)" />
         <signal name="XLXN_24(31:0)" />
@@ -359,9 +351,9 @@
             <wire x2="2208" y1="1440" y2="1872" x1="2208" />
         </branch>
         <branch name="N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,N0,S(32)">
+            <wire x2="2256" y1="944" y2="944" x1="1968" />
             <wire x2="1968" y1="944" y2="1440" x1="1968" />
             <wire x2="2048" y1="1440" y2="1440" x1="1968" />
-            <wire x2="2256" y1="944" y2="944" x1="1968" />
         </branch>
     </sheet>
 </drawing>

@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.06 secs
  
---> Reading design: Org_Lab3.prj
+--> 
+Reading design: Org_Lab3.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,66 +111,66 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "E:\organization\Org_Lab3\xor32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/xor32.v" into library work
 Parsing module <xor32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\srl32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/srl32.v" into library work
 Parsing module <srl32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\SignalExt_32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/SignalExt_32.v" into library work
 Parsing module <SignalExt_32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\or_bit_32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/or_bit_32.v" into library work
 Parsing module <or_bit_32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\or32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/or32.v" into library work
 Parsing module <or32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\nor32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/nor32.v" into library work
 Parsing module <nor32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\mux8to1_32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/mux8to1_32.v" into library work
 Parsing module <mux8to1_32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\and32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/and32.v" into library work
 Parsing module <and32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\ADC32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/ADC32.v" into library work
 Parsing module <ADC32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Regs.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Regs.v" into library work
 Parsing module <Regs>.
-Analyzing Verilog file "E:\organization\Org_Lab3\mux2to1_5.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/mux2to1_5.v" into library work
 Parsing module <mux2to1_5>.
-Analyzing Verilog file "E:\organization\Org_Lab3\mux2to1_32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/mux2to1_32.v" into library work
 Parsing module <mux2to1_32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Ext_32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Ext_32.v" into library work
 Parsing module <Ext_32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Decode_pc_Int.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Decode_pc_Int.v" into library work
 Parsing module <Decode_pc_Int>.
-Analyzing Verilog file "E:\organization\Org_Lab3\alu.vf" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/alu.vf" into library work
 Parsing module <alu>.
-Analyzing Verilog file "E:\organization\Org_Lab3\add_32.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/add_32.v" into library work
 Parsing module <add_32>.
-Analyzing Verilog file "E:\organization\Org_Lab3\SCPU_ctrl.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/SCPU_ctrl.v" into library work
 Parsing module <SCPU_ctrl>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Data_path.vf" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Data_path.vf" into library work
 Parsing module <alu_MUSER_Data_path>.
 Parsing module <Data_path>.
-Analyzing Verilog file "E:\organization\Org_Lab3\seven_seg_Dev_IO.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/seven_seg_Dev_IO.v" into library work
 Parsing module <seven_seg_Dev_IO>.
-Analyzing Verilog file "E:\organization\Org_Lab3\seven_seg_dev.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/seven_seg_dev.v" into library work
 Parsing module <seven_seg_dev>.
-Analyzing Verilog file "E:\organization\Org_Lab3\SCPU.vf" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/SCPU.vf" into library work
 Parsing module <alu_MUSER_SCPU>.
 Parsing module <Data_path_MUSER_SCPU>.
 Parsing module <SCPU>.
-Analyzing Verilog file "E:\organization\Org_Lab3\MIO_BUS.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/MIO_BUS.v" into library work
 Parsing module <MIO_BUS>.
-Analyzing Verilog file "E:\organization\Org_Lab3\led_Dev_IO.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/led_Dev_IO.v" into library work
 Parsing module <led_Dev_IO>.
-Analyzing Verilog file "E:\organization\Org_Lab3\ipcore_dir\ROM_B.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/ipcore_dir/ROM_B.v" into library work
 Parsing module <ROM_B>.
-Analyzing Verilog file "E:\organization\Org_Lab3\ipcore_dir\RAM_B.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/ipcore_dir/RAM_B.v" into library work
 Parsing module <RAM_B>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Counter_xl.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Counter_xl.v" into library work
 Parsing module <Counter_x>.
-Analyzing Verilog file "E:\organization\Org_Lab3\clk_div.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/clk_div.v" into library work
 Parsing module <clk_div>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Anti_jitter.v" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Anti_jitter.v" into library work
 Parsing module <Anti_jitter>.
-Analyzing Verilog file "E:\organization\Org_Lab3\Org_Lab3.vf" into library work
+Analyzing Verilog file "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" into library work
 Parsing module <alu_MUSER_Org_Lab3>.
 Parsing module <Data_path_MUSER_Org_Lab3>.
 Parsing module <SCPU_MUSER_Org_Lab3>.
@@ -182,7 +185,7 @@ Elaborating module <Org_Lab3>.
 Elaborating module <SCPU_MUSER_Org_Lab3>.
 
 Elaborating module <SCPU_ctrl>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\SCPU_ctrl.v" Line 21: Empty module <SCPU_ctrl> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/SCPU_ctrl.v" Line 21: Empty module <SCPU_ctrl> remains a black box.
 
 Elaborating module <Data_path_MUSER_Org_Lab3>.
 
@@ -193,8 +196,6 @@ Elaborating module <and32>.
 Elaborating module <or32>.
 
 Elaborating module <ADC32>.
-WARNING:HDLCompiler:91 - "E:\organization\Org_Lab3\ADC32.v" Line 34: Signal <S0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "E:\organization\Org_Lab3\ADC32.v" Line 35: Signal <S1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <xor32>.
 
@@ -209,13 +210,13 @@ Elaborating module <or_bit_32>.
 Elaborating module <SignalExt_32>.
 
 Elaborating module <GND>.
-WARNING:HDLCompiler:634 - "E:\organization\Org_Lab3\Org_Lab3.vf" Line 42: Net <XLXN_25[31]> does not have a driver.
-WARNING:HDLCompiler:1127 - "E:\organization\Org_Lab3\Org_Lab3.vf" Line 145: Assignment to XLXN_15 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 42: Net <XLXN_25[31]> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 145: Assignment to XLXN_15 ignored, since the identifier is never used
 
 Elaborating module <Regs>.
 
 Elaborating module <Decode_pc_Int>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\Decode_pc_Int.v" Line 21: Empty module <Decode_pc_Int> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/Decode_pc_Int.v" Line 21: Empty module <Decode_pc_Int> remains a black box.
 
 Elaborating module <VCC>.
 
@@ -228,50 +229,50 @@ Elaborating module <mux2to1_5>.
 Elaborating module <add_32>.
 
 Elaborating module <mux2to1_32>.
-WARNING:HDLCompiler:634 - "E:\organization\Org_Lab3\Org_Lab3.vf" Line 126: Net <XLXN_23[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 126: Net <XLXN_23[4]> does not have a driver.
 
 Elaborating module <ROM_B>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\ipcore_dir\ROM_B.v" Line 39: Empty module <ROM_B> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/ipcore_dir/ROM_B.v" Line 39: Empty module <ROM_B> remains a black box.
 
 Elaborating module <RAM_B>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/ipcore_dir/RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
 
 Elaborating module <MIO_BUS>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\MIO_BUS.v" Line 21: Empty module <MIO_BUS> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/MIO_BUS.v" Line 21: Empty module <MIO_BUS> remains a black box.
 
 Elaborating module <seven_seg_Dev_IO>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\seven_seg_Dev_IO.v" Line 21: Empty module <seven_seg_Dev_IO> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/seven_seg_Dev_IO.v" Line 21: Empty module <seven_seg_Dev_IO> remains a black box.
 
 Elaborating module <seven_seg_dev>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\seven_seg_dev.v" Line 21: Empty module <seven_seg_dev> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/seven_seg_dev.v" Line 21: Empty module <seven_seg_dev> remains a black box.
 
 Elaborating module <led_Dev_IO>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\led_Dev_IO.v" Line 21: Empty module <led_Dev_IO> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/led_Dev_IO.v" Line 21: Empty module <led_Dev_IO> remains a black box.
 
 Elaborating module <clk_div>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\clk_div.v" Line 21: Empty module <clk_div> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/clk_div.v" Line 21: Empty module <clk_div> remains a black box.
 
 Elaborating module <Anti_jitter>.
 
 Elaborating module <Counter_x>.
-WARNING:HDLCompiler:1499 - "E:\organization\Org_Lab3\Counter_xl.v" Line 21: Empty module <Counter_x> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/fan/code/test/Org_Lab3/Counter_xl.v" Line 21: Empty module <Counter_x> remains a black box.
 
 Elaborating module <INV>.
-WARNING:HDLCompiler:634 - "E:\organization\Org_Lab3\Org_Lab3.vf" Line 278: Net <blinke[3]> does not have a driver.
-WARNING:HDLCompiler:634 - "E:\organization\Org_Lab3\Org_Lab3.vf" Line 281: Net <N0> does not have a driver.
-WARNING:HDLCompiler:552 - "E:\organization\Org_Lab3\Org_Lab3.vf" Line 312: Input port MIO_ready is not connected on this instance
-WARNING:Xst:2972 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 169. All outputs of instance <XLXI_8> of block <mux2to1_5> are unconnected in block <Data_path_MUSER_Org_Lab3>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 52. All outputs of instance <XLXI_2> of block <or32> are unconnected in block <alu_MUSER_Org_Lab3>. Underlying logic will be removed.
+WARNING:HDLCompiler:634 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 278: Net <blinke[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 281: Net <N0> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" Line 312: Input port MIO_ready is not connected on this instance
+WARNING:Xst:2972 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 169. All outputs of instance <XLXI_8> of block <mux2to1_5> are unconnected in block <Data_path_MUSER_Org_Lab3>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 52. All outputs of instance <XLXI_2> of block <or32> are unconnected in block <alu_MUSER_Org_Lab3>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Org_Lab3>.
-    Related source file is "E:\organization\Org_Lab3\Org_Lab3.vf".
-INFO:Xst:3210 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 312: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 381: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 393: Output port <button_pulse> of the instance <U9> is unconnected or connected to loadless signal.
+    Related source file is "/home/fan/code/test/Org_Lab3/Org_Lab3.vf".
+INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 312: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 381: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 393: Output port <button_pulse> of the instance <U9> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <blinke> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <N0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -279,24 +280,24 @@ WARNING:Xst:653 - Signal <N0> is used but never assigned. This sourceless signal
 Unit <Org_Lab3> synthesized.
 
 Synthesizing Unit <SCPU_MUSER_Org_Lab3>.
-    Related source file is "E:\organization\Org_Lab3\Org_Lab3.vf".
+    Related source file is "/home/fan/code/test/Org_Lab3/Org_Lab3.vf".
 WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <SCPU_MUSER_Org_Lab3> synthesized.
 
 Synthesizing Unit <Data_path_MUSER_Org_Lab3>.
-    Related source file is "E:\organization\Org_Lab3\Org_Lab3.vf".
-INFO:Xst:3210 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 142: Output port <overflow> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 169: Output port <o> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+    Related source file is "/home/fan/code/test/Org_Lab3/Org_Lab3.vf".
+INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 142: Output port <overflow> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 169: Output port <o> of the instance <XLXI_8> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXN_23> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <Data_path_MUSER_Org_Lab3> synthesized.
 
 Synthesizing Unit <alu_MUSER_Org_Lab3>.
-    Related source file is "E:\organization\Org_Lab3\Org_Lab3.vf".
-INFO:Xst:3210 - "E:\organization\Org_Lab3\Org_Lab3.vf" line 52: Output port <res> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Related source file is "/home/fan/code/test/Org_Lab3/Org_Lab3.vf".
+INFO:Xst:3210 - "/home/fan/code/test/Org_Lab3/Org_Lab3.vf" line 52: Output port <res> of the instance <XLXI_2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXN_25> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <overflow> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -304,62 +305,62 @@ WARNING:Xst:653 - Signal <overflow> is used but never assigned. This sourceless 
 Unit <alu_MUSER_Org_Lab3> synthesized.
 
 Synthesizing Unit <and32>.
-    Related source file is "E:\organization\Org_Lab3\and32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/and32.v".
     Summary:
 	no macro.
 Unit <and32> synthesized.
 
 Synthesizing Unit <ADC32>.
-    Related source file is "E:\organization\Org_Lab3\ADC32.v".
-    Found 33-bit adder for signal <n0014> created at line 28.
-    Found 33-bit adder for signal <n0021> created at line 29.
-    Found 33-bit adder for signal <S1> created at line 29.
+    Related source file is "/home/fan/code/test/Org_Lab3/ADC32.v".
+    Found 33-bit subtractor for signal <_n0023> created at line 24.
+    Found 33-bit adder for signal <_n0024> created at line 24.
+    Found 33-bit adder for signal <_n0025> created at line 24.
+    Found 33-bit adder for signal <S> created at line 24.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred   2 Multiplexer(s).
+	inferred   4 Adder/Subtractor(s).
 Unit <ADC32> synthesized.
 
 Synthesizing Unit <xor32>.
-    Related source file is "E:\organization\Org_Lab3\xor32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/xor32.v".
     Summary:
 Unit <xor32> synthesized.
 
 Synthesizing Unit <nor32>.
-    Related source file is "E:\organization\Org_Lab3\nor32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/nor32.v".
     Summary:
 	no macro.
 Unit <nor32> synthesized.
 
 Synthesizing Unit <srl32>.
-    Related source file is "E:\organization\Org_Lab3\srl32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/srl32.v".
 WARNING:Xst:647 - Input <B<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <B<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 32-bit shifter logical right for signal <res> created at line 23
+    Found 32-bit shifter logical right for signal <res> created at line 24
     Summary:
 	inferred   1 Combinational logic shifter(s).
 Unit <srl32> synthesized.
 
 Synthesizing Unit <mux8to1_32>.
-    Related source file is "E:\organization\Org_Lab3\mux8to1_32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/mux8to1_32.v".
     Found 32-bit 8-to-1 multiplexer for signal <o> created at line 35.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux8to1_32> synthesized.
 
 Synthesizing Unit <or_bit_32>.
-    Related source file is "E:\organization\Org_Lab3\or_bit_32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/or_bit_32.v".
     Summary:
 	no macro.
 Unit <or_bit_32> synthesized.
 
 Synthesizing Unit <SignalExt_32>.
-    Related source file is "E:\organization\Org_Lab3\SignalExt_32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/SignalExt_32.v".
     Summary:
 	no macro.
 Unit <SignalExt_32> synthesized.
 
 Synthesizing Unit <Regs>.
-    Related source file is "E:\organization\Org_Lab3\Regs.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/Regs.v".
     Found 992-bit register for signal <register[1][31]_register[1][31]_mux_41_OUT>.
     Found 32-bit 31-to-1 multiplexer for signal <R_addr_A[4]_register[31][31]_wide_mux_1_OUT> created at line 28.
     Found 32-bit 31-to-1 multiplexer for signal <R_addr_B[4]_register[31][31]_wide_mux_4_OUT> created at line 29.
@@ -369,26 +370,26 @@ Synthesizing Unit <Regs>.
 Unit <Regs> synthesized.
 
 Synthesizing Unit <Ext_32>.
-    Related source file is "E:\organization\Org_Lab3\Ext_32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/Ext_32.v".
     Summary:
 	no macro.
 Unit <Ext_32> synthesized.
 
 Synthesizing Unit <add_32>.
-    Related source file is "E:\organization\Org_Lab3\add_32.v".
-    Found 32-bit adder for signal <c> created at line 26.
+    Related source file is "/home/fan/code/test/Org_Lab3/add_32.v".
+    Found 32-bit adder for signal <c> created at line 27.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <add_32> synthesized.
 
 Synthesizing Unit <mux2to1_32>.
-    Related source file is "E:\organization\Org_Lab3\mux2to1_32.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/mux2to1_32.v".
     Summary:
-	no macro.
+	inferred   1 Multiplexer(s).
 Unit <mux2to1_32> synthesized.
 
 Synthesizing Unit <Anti_jitter>.
-    Related source file is "E:\organization\Org_Lab3\Anti_jitter.v".
+    Related source file is "/home/fan/code/test/Org_Lab3/Anti_jitter.v".
     Found 8-bit register for signal <sw_temp>.
     Found 32-bit register for signal <counter>.
     Found 1-bit register for signal <pluse>.
@@ -410,9 +411,10 @@ Unit <Anti_jitter> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 5
+# Adders/Subtractors                                   : 7
  32-bit adder                                          : 3
- 33-bit adder                                          : 2
+ 33-bit adder                                          : 3
+ 33-bit subtractor                                     : 1
 # Registers                                            : 8
  1-bit register                                        : 1
  32-bit register                                       : 1
@@ -423,18 +425,16 @@ Macro Statistics
  32-bit comparator greater                             : 1
  4-bit comparator not equal                            : 1
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 7
- 32-bit 2-to-1 multiplexer                             : 2
+# Multiplexers                                         : 9
+ 32-bit 2-to-1 multiplexer                             : 6
  32-bit 31-to-1 multiplexer                            : 2
  32-bit 8-to-1 multiplexer                             : 1
- 33-bit 2-to-1 multiplexer                             : 2
 # Logic shifters                                       : 1
  32-bit shifter logical right                          : 1
 # Xors                                                 : 2
  32-bit xor2                                           : 2
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -1463,9 +1463,10 @@ Unit <Anti_jitter> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Adders/Subtractors                                   : 6
  32-bit adder                                          : 2
- 33-bit adder                                          : 2
+ 33-bit adder                                          : 3
+ 33-bit subtractor                                     : 1
 # Counters                                             : 1
  32-bit up counter                                     : 1
 # Registers                                            : 1021
@@ -1474,11 +1475,10 @@ Macro Statistics
  32-bit comparator greater                             : 1
  4-bit comparator not equal                            : 1
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 7
- 32-bit 2-to-1 multiplexer                             : 2
+# Multiplexers                                         : 9
+ 32-bit 2-to-1 multiplexer                             : 6
  32-bit 31-to-1 multiplexer                            : 2
  32-bit 8-to-1 multiplexer                             : 1
- 33-bit 2-to-1 multiplexer                             : 2
 # Logic shifters                                       : 1
  32-bit shifter logical right                          : 1
 # Xors                                                 : 2
@@ -2526,8 +2526,6 @@ Optimizing unit <Anti_jitter> ...
 Optimizing unit <Data_path_MUSER_Org_Lab3> ...
 
 Optimizing unit <alu_MUSER_Org_Lab3> ...
-
-Optimizing unit <ADC32> ...
 WARNING:Xst:2677 - Node <U9/pluse> of sequential type is unconnected in block <Org_Lab3>.
 WARNING:Xst:2677 - Node <U9/button_pulse_3> of sequential type is unconnected in block <Org_Lab3>.
 WARNING:Xst:2677 - Node <U9/button_pulse_2> of sequential type is unconnected in block <Org_Lab3>.
@@ -2551,7 +2549,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U9/counter_17> (wit
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Org_Lab3, actual ratio is 11.
+Found area constraint ratio of 100 (+ 5) on block Org_Lab3, actual ratio is 10.
 
 Final Macro Processing ...
 
@@ -2583,23 +2581,23 @@ Top Level Output File Name         : Org_Lab3.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1614
+# BELS                             : 1711
 #      AND2                        : 1
 #      GND                         : 7
-#      INV                         : 39
-#      LUT1                        : 80
-#      LUT2                        : 119
+#      INV                         : 41
+#      LUT1                        : 79
+#      LUT2                        : 151
 #      LUT2_D                      : 1
-#      LUT3                        : 293
-#      LUT4                        : 374
+#      LUT3                        : 324
+#      LUT4                        : 342
 #      LUT4_L                      : 52
 #      LUT5                        : 30
 #      LUT6                        : 43
-#      MUXCY                       : 179
+#      MUXCY                       : 211
 #      MUXF5                       : 138
 #      MUXF6                       : 40
 #      VCC                         : 7
-#      XORCY                       : 211
+#      XORCY                       : 244
 # FlipFlops/Latches                : 297
 #      FD                          : 25
 #      FDC                         : 114
@@ -2628,14 +2626,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             297  out of  18224     1%  
- Number of Slice LUTs:                 1031  out of   9112    11%  
-    Number used as Logic:              1031  out of   9112    11%  
+ Number of Slice LUTs:                 1063  out of   9112    11%  
+    Number used as Logic:              1063  out of   9112    11%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1206
-   Number with an unused Flip Flop:     909  out of   1206    75%  
-   Number with an unused LUT:           175  out of   1206    14%  
-   Number of fully used LUT-FF pairs:   122  out of   1206    10%  
+ Number of LUT Flip Flop pairs used:   1238
+   Number with an unused Flip Flop:     941  out of   1238    76%  
+   Number with an unused LUT:           175  out of   1238    14%  
+   Number of fully used LUT-FF pairs:   122  out of   1238     9%  
    Number of unique control sets:        19
 
 IO Utilization: 
@@ -2665,17 +2663,17 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                          | Clock buffer(FF name)                                                                                                       | Load  |
---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
-clk_50mhz                             | BUFGP                                                                                                                       | 77    |
-U8/Clk_CPU(U8/Clk_CPU1:O)             | BUFG(*)(U5/blink_out_0)                                                                                                     | 186   |
-U9/button_out_0                       | NONE(U5/Disp_num_31_LD)                                                                                                     | 2     |
-U3/N1                                 | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 2     |
-U8/clkdiv<7>                          | BUFG                                                                                                                        | 35    |
-U2/N1                                 | NONE(U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 2     |
-U1/DataPath/U1/XLXI_3/Madd_n0021_cy<0>| NONE(U1/DataPath/U3/int_req_r)                                                                                              | 1     |
---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)                                                                                                       | Load  |
+---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+clk_50mhz                              | BUFGP                                                                                                                       | 77    |
+U8/Clk_CPU(U8/Clk_CPU1:O)              | BUFG(*)(U5/blink_out_0)                                                                                                     | 186   |
+U9/button_out_0                        | NONE(U5/Disp_num_31_LD)                                                                                                     | 2     |
+U3/N1                                  | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 2     |
+U8/clkdiv<7>                           | BUFG                                                                                                                        | 35    |
+U2/N1                                  | NONE(U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 2     |
+U1/DataPath/U1/XLXI_3/Madd__n0024_cy<0>| NONE(U1/DataPath/U3/int_req_r)                                                                                              | 1     |
+---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -2689,9 +2687,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 14.476ns (Maximum Frequency: 69.080MHz)
+   Minimum period: 16.404ns (Maximum Frequency: 60.962MHz)
    Minimum input arrival time before clock: 5.370ns
-   Maximum output required time after clock: 8.106ns
+   Maximum output required time after clock: 8.232ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -2700,10 +2698,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_50mhz'
-  Clock period: 14.476ns (frequency: 69.080MHz)
-  Total number of paths / destination ports: 875085 / 187
+  Clock period: 16.404ns (frequency: 60.962MHz)
+  Total number of paths / destination ports: 16852245 / 187
 -------------------------------------------------------------------------
-Delay:               14.476ns (Levels of Logic = 44)
+Delay:               16.404ns (Levels of Logic = 45)
   Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Source Clock:      clk_50mhz falling
@@ -2718,43 +2716,44 @@ Delay:               14.476ns (Levels of Logic = 44)
      begin scope: 'U1/Controller:OPcode<1>'
      LUT2:I0->O            2   0.203   0.617  ALU_Control<1>2_SW0 (N20)
      LUT4:I3->O            4   0.205   0.931  ALU_Control<1>2 (N2)
-     LUT4:I0->O          129   0.203   1.954  ALU_Control<2>62 (ALU_Control<2>)
+     LUT4:I0->O          159   0.203   2.017  ALU_Control<2>62 (ALU_Control<2>)
      end scope: 'U1/Controller:ALU_Control<2>'
-     LUT3:I2->O            0   0.205   0.000  U1/DataPath/U1/XLXI_3/n0019<0>1 (U1/DataPath/U1/XLXI_3/Madd_n0021_lut<0>)
-     XORCY:LI->O           2   0.136   0.617  U1/DataPath/U1/XLXI_3/Madd_n0021_xor<0> (U1/DataPath/U1/XLXI_3/n0021<0>)
-     LUT4:I3->O            1   0.205   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_lut<0> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<0> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<1> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<2> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<3> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<4> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<5> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<6> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<7> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<8> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<9> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<10> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<11> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<12> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<13> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<14> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<15> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<16> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<17> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<18> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<19> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<19>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<20> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<20>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<21> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<21>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<22> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<23> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<23>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<24> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<24>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<25> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<25>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<26> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<26>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<27> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<27>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<28> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<28>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<29> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<29>)
-     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<30> (U1/DataPath/U1/XLXI_3/Mmux_S_rs_cy<30>)
-     XORCY:CI->O           1   0.180   0.580  U1/DataPath/U1/XLXI_3/Mmux_S_rs_xor<31> (U1/DataPath/U1/S<31>)
+     LUT3:I2->O            0   0.205   0.000  U1/DataPath/U1/XLXI_8/Mxor_res_1_xo<0>1 (U1/DataPath/U1/XLXI_3/Madd__n0024_lut<1>)
+     XORCY:LI->O           2   0.136   0.617  U1/DataPath/U1/XLXI_3/Madd__n0024_xor<1> (U1/DataPath/U1/XLXI_3/_n0024<1>)
+     LUT2:I1->O            1   0.205   0.580  U1/DataPath/U1/XLXI_3/Madd__n0025 (U1/DataPath/U1/XLXI_3/Madd__n0025)
+     LUT3:I2->O            1   0.205   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_lut<0>2 (U1/DataPath/U1/XLXI_3/Madd__n0025_lut<0>2)
+     MUXCY:S->O            1   0.172   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_1 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>2)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_2 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>3)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_3 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>4)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_4 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>5)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_5 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>6)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_6 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>7)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_7 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>8)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_8 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>9)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_9 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>10)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_10 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>11)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_11 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>12)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_12 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>13)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_13 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>14)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_14 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>15)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_15 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>16)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_16 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>17)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_17 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>18)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_18 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>19)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_19 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>20)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_20 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>21)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_21 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>22)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_22 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>23)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_23 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>24)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_24 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>25)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_25 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>26)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_26 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>27)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_27 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>28)
+     MUXCY:CI->O           1   0.019   0.000  U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>_28 (U1/DataPath/U1/XLXI_3/Madd__n0025_cy<0>29)
+     XORCY:CI->O           1   0.180   0.580  U1/DataPath/U1/XLXI_3/Madd__n0025_xor<0>_29 (U1/DataPath/U1/XLXI_3/_n0025<30>)
+     LUT2:I1->O            1   0.205   0.000  U1/DataPath/U1/XLXI_3/Madd_S_lut<30> (U1/DataPath/U1/XLXI_3/Madd_S_lut<30>)
+     MUXCY:S->O            1   0.172   0.000  U1/DataPath/U1/XLXI_3/Madd_S_cy<30> (U1/DataPath/U1/XLXI_3/Madd_S_cy<30>)
+     XORCY:CI->O           1   0.180   0.580  U1/DataPath/U1/XLXI_3/Madd_S_xor<31> (U1/DataPath/U1/S<31>)
      LUT6:I5->O           36   0.205   1.596  U1/DataPath/U1/XLXI_7/Mmux_o251 (XLXN_62<31>)
      begin scope: 'U4:addr_bus<31>'
      LUT4:I0->O           67   0.203   1.660  Cpu_data4bus<0>21 (N11)
@@ -2763,8 +2762,8 @@ Delay:               14.476ns (Levels of Logic = 44)
      begin scope: 'U3:wea<0>'
      RAMB16BWER:WEA3           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                     14.476ns (4.842ns logic, 9.634ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                     16.404ns (5.547ns logic, 10.857ns route)
+                                       (33.8% logic, 66.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U8/Clk_CPU'
@@ -2829,9 +2828,9 @@ Offset:              5.370ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.222   0.879  BTN_0_IBUF (BTN_0_IBUF)
-     LUT4:I1->O            1   0.205   0.580  U9/btn_temp[3]_sw_temp[7]_OR_141_o1 (U9/btn_temp[3]_sw_temp[7]_OR_141_o1)
-     LUT5:I4->O            2   0.205   0.617  U9/btn_temp[3]_sw_temp[7]_OR_141_o2 (U9/btn_temp[3]_sw_temp[7]_OR_141_o2)
-     LUT5:I4->O           17   0.205   1.027  U9/btn_temp[3]_sw_temp[7]_OR_141_o7 (U9/btn_temp[3]_sw_temp[7]_OR_141_o)
+     LUT4:I1->O            1   0.205   0.580  U9/btn_temp[3]_sw_temp[7]_OR_136_o1 (U9/btn_temp[3]_sw_temp[7]_OR_136_o1)
+     LUT5:I4->O            2   0.205   0.617  U9/btn_temp[3]_sw_temp[7]_OR_136_o2 (U9/btn_temp[3]_sw_temp[7]_OR_136_o2)
+     LUT5:I4->O           17   0.205   1.027  U9/btn_temp[3]_sw_temp[7]_OR_136_o7 (U9/btn_temp[3]_sw_temp[7]_OR_136_o)
      FDRE:R                    0.430          U9/counter_0
     ----------------------------------------
     Total                      5.370ns (2.267ns logic, 3.103ns route)
@@ -2841,7 +2840,7 @@ Offset:              5.370ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/Clk_CPU'
   Total number of paths / destination ports: 376 / 20
 -------------------------------------------------------------------------
-Offset:              7.958ns (Levels of Logic = 9)
+Offset:              7.832ns (Levels of Logic = 9)
   Source:            U5/Disp_num_8_P_8 (FF)
   Destination:       SEGMENT<5> (PAD)
   Source Clock:      U8/Clk_CPU falling
@@ -2850,8 +2849,8 @@ Offset:              7.958ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.447   0.808  Disp_num_8_P_8 (Disp_num_8_P_8)
-     LUT3:I0->O            3   0.205   0.755  Disp_num_81 (Disp_num<8>)
+     FDP:C->Q              1   0.447   0.684  Disp_num_8_P_8 (Disp_num_8_P_8)
+     LUT3:I1->O            3   0.203   0.755  Disp_num_81 (Disp_num<8>)
      end scope: 'U5:Disp_num<8>'
      begin scope: 'U6:disp_num<8>'
      LUT3:I1->O            1   0.203   0.684  disp_current<8>1 (disp_current<8>)
@@ -2862,8 +2861,8 @@ Offset:              7.958ns (Levels of Logic = 9)
      end scope: 'U6:SEGMENT<2>'
      OBUF:I->O                 2.571          SEGMENT_2_OBUF (SEGMENT<2>)
     ----------------------------------------
-    Total                      7.958ns (4.112ns logic, 3.846ns route)
-                                       (51.7% logic, 48.3% route)
+    Total                      7.832ns (4.110ns logic, 3.722ns route)
+                                       (52.5% logic, 47.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50mhz'
@@ -2895,7 +2894,7 @@ Offset:              7.448ns (Levels of Logic = 7)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U9/button_out_0'
   Total number of paths / destination ports: 104 / 8
 -------------------------------------------------------------------------
-Offset:              8.106ns (Levels of Logic = 9)
+Offset:              8.232ns (Levels of Logic = 9)
   Source:            U5/Disp_num_31_LD (LATCH)
   Destination:       SEGMENT<5> (PAD)
   Source Clock:      U9/button_out_0 falling
@@ -2904,8 +2903,8 @@ Offset:              8.106ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               8   0.498   0.907  Disp_num_31_LD (Disp_num_31_LD)
-     LUT3:I1->O            3   0.203   0.755  Disp_num_81 (Disp_num<8>)
+     LD:G->Q               8   0.498   1.031  Disp_num_31_LD (Disp_num_31_LD)
+     LUT3:I0->O            3   0.205   0.755  Disp_num_81 (Disp_num<8>)
      end scope: 'U5:Disp_num<8>'
      begin scope: 'U6:disp_num<8>'
      LUT3:I1->O            1   0.203   0.684  disp_current<8>1 (disp_current<8>)
@@ -2916,15 +2915,15 @@ Offset:              8.106ns (Levels of Logic = 9)
      end scope: 'U6:SEGMENT<2>'
      OBUF:I->O                 2.571          SEGMENT_2_OBUF (SEGMENT<2>)
     ----------------------------------------
-    Total                      8.106ns (4.161ns logic, 3.945ns route)
-                                       (51.3% logic, 48.7% route)
+    Total                      8.232ns (4.163ns logic, 4.069ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock U1/DataPath/U1/XLXI_3/Madd_n0021_cy<0>
+Clock to Setup on destination clock U1/DataPath/U1/XLXI_3/Madd__n0024_cy<0>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -2934,16 +2933,16 @@ clk_50mhz      |    3.821|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U8/Clk_CPU
---------------------------------------+---------+---------+---------+---------+
-                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------+---------+---------+---------+---------+
-U1/DataPath/U1/XLXI_3/Madd_n0021_cy<0>|    3.033|         |         |         |
-U8/Clk_CPU                            |    5.518|         |    4.137|         |
-U8/clkdiv<7>                          |         |         |    5.005|         |
-U9/button_out_0                       |         |         |    2.828|         |
-clk_50mhz                             |    4.267|   20.256|   16.447|         |
---------------------------------------+---------+---------+---------+---------+
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+U1/DataPath/U1/XLXI_3/Madd__n0024_cy<0>|    3.033|         |         |         |
+U8/Clk_CPU                             |    5.518|         |    4.137|         |
+U8/clkdiv<7>                           |         |         |    5.005|         |
+U9/button_out_0                        |         |         |    2.954|         |
+clk_50mhz                              |    4.267|   22.184|   18.375|         |
+---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U8/clkdiv<7>
 ---------------+---------+---------+---------+---------+
@@ -2961,20 +2960,21 @@ Clock to Setup on destination clock clk_50mhz
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 U8/Clk_CPU     |         |         |    1.541|         |
-clk_50mhz      |    4.541|         |   14.476|         |
+clk_50mhz      |    4.541|         |   16.404|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 25.04 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 10.64 secs
  
 --> 
 
-Total memory usage is 208436 kilobytes
+
+Total memory usage is 501020 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2034 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of warnings : 2032 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

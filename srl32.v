@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:01:40 03/12/2015 
+// Create Date:    11:56:59 04/10/2015 
 // Design Name: 
 // Module Name:    srl32 
 // Project Name: 
@@ -18,15 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module srl32(input [31:0] A,
-				 input [31:0] B,
-				 output reg [31:0] res
-    );
-	 
-	 always @(*)
-	 begin
-		res <= A >> (B[10:6]);
-	 end
+module srl32(
+	input [31:0] A,
+	input [31:0] B,
+	output [31:0] res
+	);
 
+	assign res = A >> B[10:6];
 
 endmodule

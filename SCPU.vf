@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : SCPU.vf
-// /___/   /\     Timestamp : 05/20/2015 12:39:17
+// /___/   /\     Timestamp : 05/21/2015 15:09:22
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/fan/code/test/Org_Lab3/ipcore_dir -intstyle ise -family spartan6 -verilog /home/fan/code/test/Org_Lab3/SCPU.vf -w /home/fan/code/test/Org_Lab3/SCPU.sch
+//Command: sch2hdl -sympath E:/organization/OrgLab/ipcore_dir -intstyle ise -family spartan6 -verilog E:/organization/OrgLab/SCPU.vf -w E:/organization/OrgLab/SCPU.sch
 //Design Name: SCPU
 //Device: spartan6
 //Purpose:

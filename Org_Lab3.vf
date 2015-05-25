@@ -7,258 +7,17 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Org_Lab3.vf
-// /___/   /\     Timestamp : 05/20/2015 12:39:16
+// /___/   /\     Timestamp : 05/25/2015 13:06:17
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/fan/code/test/Org_Lab3/ipcore_dir -intstyle ise -family spartan6 -verilog /home/fan/code/test/Org_Lab3/Org_Lab3.vf -w /home/fan/code/test/Org_Lab3/Org_Lab3.sch
+//Command: sch2hdl -sympath /home/fan/code/OrgLab/ipcore_dir -intstyle ise -family spartan6 -verilog /home/fan/code/OrgLab/Org_Lab3.vf -w /home/fan/code/OrgLab/Org_Lab3.sch
 //Design Name: Org_Lab3
 //Device: spartan6
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
 //    synthesized and simulated, but it should not be modified. 
 //
-`timescale 1ns / 1ps
-
-module alu_MUSER_Org_Lab3(A, 
-                          ALU_operation, 
-                          B, 
-                          overflow, 
-                          res, 
-                          zero);
-
-    input [31:0] A;
-    input [2:0] ALU_operation;
-    input [31:0] B;
-   output overflow;
-   output [31:0] res;
-   output zero;
-   
-   wire N0;
-   wire [32:0] S;
-   wire [31:0] XLXN_5;
-   wire [31:0] XLXN_10;
-   wire [31:0] XLXN_11;
-   wire [31:0] XLXN_12;
-   wire [31:0] XLXN_26;
-   wire [31:0] XLXN_28;
-   wire [31:0] XLXN_33;
-   wire [31:0] res_DUMMY;
-   
-   assign res[31:0] = res_DUMMY[31:0];
-   mux8to1_32  XLXI_1 (.sel(ALU_operation[2:0]), 
-                      .x0(XLXN_5[31:0]), 
-                      .x1(XLXN_33[31:0]), 
-                      .x2(S[31:0]), 
-                      .x3(XLXN_10[31:0]), 
-                      .x4(XLXN_11[31:0]), 
-                      .x5(XLXN_12[31:0]), 
-                      .x6(S[31:0]), 
-                      .x7({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, S[32]}), 
-                      .o(res_DUMMY[31:0]));
-   or_bit_32  XLXI_2 (.A(res_DUMMY[31:0]), 
-                     .o(zero));
-   and32  XLXI_3 (.A(A[31:0]), 
-                 .B(B[31:0]), 
-                 .res(XLXN_5[31:0]));
-   ADC32  XLXI_5 (.A(A[31:0]), 
-                 .B(XLXN_28[31:0]), 
-                 .C0(ALU_operation[2]), 
-                 .S(S[32:0]));
-   xor32  XLXI_6 (.A(A[31:0]), 
-                 .B(B[31:0]), 
-                 .res(XLXN_10[31:0]));
-   nor32  XLXI_7 (.A(A[31:0]), 
-                 .B(B[31:0]), 
-                 .res(XLXN_11[31:0]));
-   srl32  XLXI_8 (.A(A[31:0]), 
-                 .B(B[31:0]), 
-                 .res(XLXN_12[31:0]));
-   xor32  XLXI_9 (.A(XLXN_26[31:0]), 
-                 .B(B[31:0]), 
-                 .res(XLXN_28[31:0]));
-   SignalExt_32  XLXI_10 (.S(ALU_operation[2]), 
-                         .So(XLXN_26[31:0]));
-   GND  XLXI_11 (.G(N0));
-   or32  XLXI_13 (.A(A[31:0]), 
-                 .B(B[31:0]), 
-                 .res(XLXN_33[31:0]));
-endmodule
-`timescale 1ns / 1ps
-
-module Data_path_MUSER_Org_Lab3(ALUSrc_B, 
-                                ALU_Control, 
-                                Branch, 
-                                clk, 
-                                Data_in, 
-                                inst_field, 
-                                Jump, 
-                                MemtoReg, 
-                                RegDst, 
-                                RegWrite, 
-                                rst, 
-                                ALU_out, 
-                                Data_out, 
-                                PC_out);
-
-    input ALUSrc_B;
-    input [2:0] ALU_Control;
-    input Branch;
-    input clk;
-    input [31:0] Data_in;
-    input [25:0] inst_field;
-    input Jump;
-    input MemtoReg;
-    input RegDst;
-    input RegWrite;
-    input rst;
-   output [31:0] ALU_out;
-   output [31:0] Data_out;
-   output [31:0] PC_out;
-   
-   wire [31:0] Imm_32;
-   wire N0;
-   wire [31:28] pc_4;
-   wire V5;
-   wire [31:0] XLXN_1;
-   wire [31:0] XLXN_2;
-   wire [31:0] XLXN_6;
-   wire [4:0] XLXN_14;
-   wire XLXN_23;
-   wire [31:0] XLXN_27;
-   wire XLXN_28;
-   wire [31:0] XLXN_29;
-   wire XLXN_31;
-   wire [31:0] XLXN_39;
-   wire [31:0] XLXN_40;
-   wire [31:0] ALU_out_DUMMY;
-   wire [31:0] Data_out_DUMMY;
-   wire [31:0] PC_out_DUMMY;
-   
-   assign ALU_out[31:0] = ALU_out_DUMMY[31:0];
-   assign Data_out[31:0] = Data_out_DUMMY[31:0];
-   assign PC_out[31:0] = PC_out_DUMMY[31:0];
-   alu_MUSER_Org_Lab3  U1 (.A(XLXN_1[31:0]), 
-                          .ALU_operation(ALU_Control[2:0]), 
-                          .B(XLXN_2[31:0]), 
-                          .overflow(), 
-                          .res(ALU_out_DUMMY[31:0]), 
-                          .zero(XLXN_23));
-   Regs  U2 (.clk(clk), 
-            .L_S(RegWrite), 
-            .rst(rst), 
-            .R_addr_A(inst_field[25:21]), 
-            .R_addr_B(inst_field[20:16]), 
-            .Wt_addr(XLXN_14[4:0]), 
-            .Wt_data(XLXN_6[31:0]), 
-            .rdata_A(XLXN_1[31:0]), 
-            .rdata_B(Data_out_DUMMY[31:0]));
-   Decode_pc_Int  U3 (.clk(clk), 
-                     .INT(XLXN_31), 
-                     .pc_next(XLXN_29[31:0]), 
-                     .reset(rst), 
-                     .RFE(XLXN_31), 
-                     .pc(PC_out_DUMMY[31:0]));
-   Ext_32  XLXI_4 (.imm_16(inst_field[15:0]), 
-                  .Imm_32(Imm_32[31:0]));
-   mux2to1_32  XLXI_7 (.a(Imm_32[31:0]), 
-                      .b(Data_out_DUMMY[31:0]), 
-                      .sel(ALUSrc_B), 
-                      .o(XLXN_2[31:0]));
-   mux2to1_32  XLXI_9 (.a(Data_in[31:0]), 
-                      .b(ALU_out_DUMMY[31:0]), 
-                      .sel(MemtoReg), 
-                      .o(XLXN_6[31:0]));
-   mux2to1_5  XLXI_10 (.a(inst_field[15:11]), 
-                      .b(inst_field[20:16]), 
-                      .sel(RegDst), 
-                      .o(XLXN_14[4:0]));
-   AND2  XLXI_11 (.I0(XLXN_23), 
-                 .I1(Branch), 
-                 .O(XLXN_28));
-   mux2to1_32  XLXI_12 (.a({pc_4[31:28], inst_field[25:0], N0, N0}), 
-                       .b(XLXN_27[31:0]), 
-                       .sel(Jump), 
-                       .o(XLXN_29[31:0]));
-   mux2to1_32  XLXI_13 (.a(XLXN_40[31:0]), 
-                       .b(XLXN_39[31:0]), 
-                       .sel(XLXN_28), 
-                       .o(XLXN_27[31:0]));
-   GND  XLXI_14 (.G(XLXN_31));
-   add_32  XLXI_15 (.a(XLXN_39[31:0]), 
-                   .b({Imm_32[29:0], N0, N0}), 
-                   .c(XLXN_40[31:0]));
-   add_32  XLXI_16 (.a(PC_out_DUMMY[31:0]), 
-                   .b({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, V5, N0, 
-         N0}), 
-                   .c(XLXN_39[31:0]));
-   GND  XLXI_17 (.G(N0));
-   VCC  XLXI_18 (.P(V5));
-endmodule
-`timescale 1ns / 1ps
-
-module SCPU_MUSER_Org_Lab3(clk, 
-                           Data_in, 
-                           inst_in, 
-                           INT, 
-                           MIO_ready, 
-                           reset, 
-                           Addr_out, 
-                           CPU_MIO, 
-                           Data_out, 
-                           mem_w, 
-                           PC_out);
-
-    input clk;
-    input [31:0] Data_in;
-    input [31:0] inst_in;
-    input INT;
-    input MIO_ready;
-    input reset;
-   output [31:0] Addr_out;
-   output CPU_MIO;
-   output [31:0] Data_out;
-   output mem_w;
-   output [31:0] PC_out;
-   
-   wire XLXN_1;
-   wire XLXN_2;
-   wire XLXN_3;
-   wire XLXN_4;
-   wire XLXN_5;
-   wire XLXN_6;
-   wire [2:0] XLXN_7;
-   
-   SCPU_ctrl  Controller (.Fun(inst_in[5:0]), 
-                         .MIO_ready(MIO_ready), 
-                         .OPcode(inst_in[31:26]), 
-                         .ALUSrc_B(XLXN_2), 
-                         .ALU_Control(XLXN_7[2:0]), 
-                         .Branch(XLXN_5), 
-                         .CPU_MIO(CPU_MIO), 
-                         .Jump(XLXN_4), 
-                         .MemtoReg(XLXN_3), 
-                         .mem_w(mem_w), 
-                         .RegDst(XLXN_1), 
-                         .RegWrite(XLXN_6));
-   Data_path_MUSER_Org_Lab3  DataPath (.ALUSrc_B(XLXN_2), 
-                                      .ALU_Control(XLXN_7[2:0]), 
-                                      .Branch(XLXN_5), 
-                                      .clk(clk), 
-                                      .Data_in(Data_in[31:0]), 
-                                      .inst_field(inst_in[25:0]), 
-                                      .Jump(XLXN_4), 
-                                      .MemtoReg(XLXN_3), 
-                                      .RegDst(XLXN_1), 
-                                      .RegWrite(XLXN_6), 
-                                      .rst(reset), 
-                                      .ALU_out(Addr_out[31:0]), 
-                                      .Data_out(Data_out[31:0]), 
-                                      .PC_out(PC_out[31:0]));
-endmodule
 `timescale 1ns / 1ps
 
 module Org_Lab3(BTN, 
@@ -286,7 +45,6 @@ module Org_Lab3(BTN,
    wire [3:0] XLXN_30;
    wire [3:0] XLXN_31;
    wire XLXN_37;
-   wire XLXN_39;
    wire XLXN_41;
    wire [0:0] XLXN_43;
    wire [31:0] XLXN_44;
@@ -306,20 +64,10 @@ module Org_Lab3(BTN,
    wire [31:0] XLXN_73;
    wire [1:0] XLXN_77;
    wire [31:0] XLXN_78;
+   wire XLXN_79;
    wire [7:0] LED_DUMMY;
    
    assign LED[7:0] = LED_DUMMY[7:0];
-   SCPU_MUSER_Org_Lab3  U1 (.clk(XLXN_39), 
-                           .Data_in(XLXN_64[31:0]), 
-                           .inst_in(XLXN_65[31:0]), 
-                           .INT(XLXN_67), 
-                           .MIO_ready(), 
-                           .reset(button_out[0]), 
-                           .Addr_out(XLXN_62[31:0]), 
-                           .CPU_MIO(), 
-                           .Data_out(XLXN_63[31:0]), 
-                           .mem_w(XLXN_45), 
-                           .PC_out(PC_out[31:0]));
    ROM_B  U2 (.addra(PC_out[11:2]), 
              .clka(XLXN_41), 
              .douta(XLXN_65[31:0]));
@@ -389,7 +137,7 @@ module Org_Lab3(BTN,
                .rst(button_out[0]), 
                .SW2(SW_OK[2]), 
                .clkdiv(clkdiv[31:0]), 
-               .Clk_CPU(XLXN_39));
+               .Clk_CPU(XLXN_79));
    Anti_jitter  U9 (.button(BTN[3:0]), 
                    .clk(clk_50mhz), 
                    .SW(SW[7:0]), 
@@ -409,8 +157,23 @@ module Org_Lab3(BTN,
                   .counter1_OUT(XLXN_60), 
                   .counter2_OUT(XLXN_61));
    VCC  XLXI_11 (.P(V5));
-   INV  XLXI_12 (.I(XLXN_39), 
+   INV  XLXI_12 (.I(XLXN_79), 
                 .O(XLXN_37));
    INV  XLXI_13 (.I(clk_50mhz), 
                 .O(XLXN_41));
+   sccpu_dataflow  XLXI_14 (.clock(XLXN_79), 
+                           .inst(XLXN_65[31:0]), 
+                           .mem(XLXN_64[31:0]), 
+                           .resetn(button_out[0]), 
+                           .alua(), 
+                           .alub(), 
+                           .alu_mem(), 
+                           .alu_out(XLXN_62[31:0]), 
+                           .data(XLXN_63[31:0]), 
+                           .pc(PC_out[31:0]), 
+                           .ra(), 
+                           .res(), 
+                           .wmem(XLXN_45), 
+                           .wn(), 
+                           .wreg());
 endmodule

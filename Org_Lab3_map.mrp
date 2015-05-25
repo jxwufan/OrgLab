@@ -10,37 +10,37 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed May 20 14:10:34 2015
+Mapped Date    : Mon May 25 13:30:19 2015
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    1
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,255 out of  18,224    6%
+  Number of Slice Registers:                 1,225 out of  18,224    6%
     Number used as Flip Flops:               1,225
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:               30
-  Number of Slice LUTs:                      2,624 out of   9,112   28%
-    Number used as logic:                    2,589 out of   9,112   28%
-      Number using O6 output only:           2,439
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,447 out of   9,112   26%
+    Number used as logic:                    2,445 out of   9,112   26%
+      Number using O6 output only:           1,759
       Number using O5 output only:              54
-      Number using O5 and O6:                   96
+      Number using O5 and O6:                  632
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:     35
+    Number used exclusively as route-thrus:      2
       Number with same-slice register load:      0
-      Number with same-slice carry load:        35
+      Number with same-slice carry load:         2
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   976 out of   2,278   42%
-  Number of MUXCYs used:                       272 out of   4,556    5%
-  Number of LUT Flip Flop pairs used:        2,655
-    Number with an unused Flip Flop:         1,400 out of   2,655   52%
-    Number with an unused LUT:                  31 out of   2,655    1%
-    Number of fully used LUT-FF pairs:       1,224 out of   2,655   46%
+  Number of occupied Slices:                   914 out of   2,278   40%
+  Number of MUXCYs used:                       120 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:        2,483
+    Number with an unused Flip Flop:         1,754 out of   2,483   70%
+    Number with an unused LUT:                  36 out of   2,483    1%
+    Number of fully used LUT-FF pairs:         693 out of   2,483   27%
     Number of unique control sets:              15
     Number of slice register sites lost
       to control set restrictions:              55 out of  18,224    1%
@@ -80,11 +80,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                5.42
+Average Fanout of Non-Clock Nets:                4.82
 
-Peak Memory Usage:  847 MB
-Total REAL time to MAP completion:  58 secs 
-Total CPU time to MAP completion:   58 secs 
+Peak Memory Usage:  846 MB
+Total REAL time to MAP completion:  42 secs 
+Total CPU time to MAP completion:   42 secs 
 
 Table of Contents
 -----------------
@@ -107,7 +107,7 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_39 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_79 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -136,9 +136,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  52 block(s) removed
-  97 block(s) optimized away
-  55 signal(s) removed
+  50 block(s) removed
+  58 block(s) optimized away
+  50 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -251,94 +251,11 @@ The signal "U7/GPIOf0_and0000" is sourceless and has been removed.
  Sourceless block "U7/GPIOf0_19" (FF) removed.
  Sourceless block "U7/GPIOf0_20" (FF) removed.
  Sourceless block "U7/GPIOf0_21" (FF) removed.
-The signal "U1/DataPath/U3/N1" is sourceless and has been removed.
-The signal "U1/DataPath/U3/EPC_and0000" is sourceless and has been removed.
- Sourceless block "U1/DataPath/U3/int_act" (FF) removed.
-  The signal "U1/DataPath/U3/int_act" is sourceless and has been removed.
-   Sourceless block "U1/DataPath/U3/int_clr1" (ROM) removed.
-    The signal "U1/DataPath/U3/int_clr" is sourceless and has been removed.
-The signal "U1/DataPath/U3/int_en_mux0000" is sourceless and has been removed.
 Unused block "U7/GPIOf0_and00001" (ROM) removed.
 Unused block "U8/Mcount_clkdiv_cy<24>" (MUX) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-FDCE 		U1/DataPath/U3/EPC_0
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_1
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_10
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_11
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_12
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_13
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_14
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_15
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_16
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_17
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_18
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_19
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_2
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_20
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_21
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_22
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_23
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_24
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_25
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_26
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_27
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_28
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_29
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_3
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_30
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_31
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_4
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_5
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_6
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_7
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_8
-   optimized to 0
-FDCE 		U1/DataPath/U3/EPC_9
-   optimized to 0
-LUT2 		U1/DataPath/U3/EPC_and00001
-   optimized to 0
-VCC 		U1/DataPath/U3/XST_VCC
-FDP 		U1/DataPath/U3/int_en
-   optimized to 1
-LUT2 		U1/DataPath/U3/int_en_mux00001
-   optimized to 1
-LUT2_D 		U1/DataPath/U3/int_en_mux00001_1
-   optimized to 1
-LOCALBUF 		U1/DataPath/U3/int_en_mux00001_1/LUT2_D_BUF
-FDC 		U1/DataPath/U3/int_req_r
-   optimized to 0
 GND 		U10/XST_GND
 VCC 		U10/XST_VCC
 GND 		U2/XST_GND

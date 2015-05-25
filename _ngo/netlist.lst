@@ -1,11 +1,10 @@
-/home/fan/code/test/Org_Lab3/Org_Lab3.ngc 1432102226
-/home/fan/code/test/Org_Lab3/MIO_BUS.ngc 1429020000
-/home/fan/code/test/Org_Lab3/clk_div.ngc 1426146000
-/home/fan/code/test/Org_Lab3/seven_seg_Dev_IO.ngc 1429020000
-ipcore_dir/RAM_B.ngc 1427381674
-/home/fan/code/test/Org_Lab3/led_Dev_IO.ngc 1429020000
-/home/fan/code/test/Org_Lab3/Counter_x.ngc 1429020000
-ipcore_dir/ROM_B.ngc 1427381437
-/home/fan/code/test/Org_Lab3/seven_seg_dev.ngc 1429020000
-/home/fan/code/test/Org_Lab3/Decode_pc_Int.ngc 1429019580
+/home/fan/code/OrgLab/Org_Lab3.ngc 1432531811
+/home/fan/code/OrgLab/MIO_BUS.ngc 1432191398
+/home/fan/code/OrgLab/clk_div.ngc 1432191398
+/home/fan/code/OrgLab/seven_seg_Dev_IO.ngc 1432191399
+ipcore_dir/RAM_B.ngc 1432191398
+/home/fan/code/OrgLab/led_Dev_IO.ngc 1432191399
+/home/fan/code/OrgLab/Counter_x.ngc 1432191398
+ipcore_dir/ROM_B.ngc 1432191398
+/home/fan/code/OrgLab/seven_seg_dev.ngc 1432191399
 OK

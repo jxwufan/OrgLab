@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-20T12:54:18</DateModified>
+  <DateModified>2015-05-25T13:04:49</DateModified>
   <ModuleName>Org_Lab3</ModuleName>
   <SummaryTimeStamp>2015-05-11T22:49:44</SummaryTimeStamp>
-  <SavedFilePath>/home/fan/code/test/Org_Lab3/iseconfig/Org_Lab3.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/fan/code/test/Org_Lab3/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/fan/code/OrgLab/iseconfig/Org_Lab3.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/fan/code/OrgLab/</ImplementationReportsDirectory>
   <DateInitialized>2015-03-23T22:45:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

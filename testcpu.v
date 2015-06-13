@@ -27,25 +27,33 @@ module testcpu;
 	// Inputs
 	reg clock;
 	reg resetn;
-	reg [31:0] inst;
 	reg [31:0] mem;
 	
 	// Outputs
 	wire [31:0] pc;
 	wire wmem;
 	wire [31:0] alu_out;
-	wire [31:0] data;
-	wire [31:0] ra;
-	wire [31:0] alu_mem;
-	wire wreg;
-	wire [4:0] wn;
 	
 	wire [31:0] rom [0:31];
-	wire [31:0] res;
+	
+	wire [31:0] npc;
+	wire [1:0] pcsource;
 	wire [31:0] alua, alub;
+	wire [3:0] aluc;
+	wire [31:0] opa, rega;
+	wire z;
+	wire [2:0] state;
+	wire selpc;
+	wire [31:0] inst;
+	wire [31:0] res;
+	
+	wire wreg;
+	wire [4:0] wn;
+
 	assign rom[0] = 32'h00000827;
 	//assign rom[1] = 32'h00010820;
 	assign rom[1] = 32'h0001102a;
+	//assign rom[2] = 32'h08000000;
 	assign rom[2] = 32'h00421820;
 	assign rom[3] = 32'h00622020;
 	assign rom[4] = 32'h00832820;
@@ -80,29 +88,35 @@ module testcpu;
 	
 
 	// Instantiate the Unit Under Test (UUT)
-	sccpu_dataflow uut (
-		.clock(clock), 
-		.resetn(resetn), 
-		.inst(inst), 
-		.mem(mem), 
-		.pc(pc), 
-		.wmem(wmem), 
-		.alu_out(alu_out), 
-		.data(data),
-		.alua(alua),
-		.alub(alub),
-		.ra(ra),
-		.res(res),
-		.alu_mem(alu_mem),
-		.wreg(wreg),
-		.wn(wn)
-	);
+	
+	mccpu uut (
+    .clock(clock), 
+    .resetn(resetn), 
+    .frommem(mem), 
+    .pc(pc), 
+    .inst(inst), 
+    .alu_out(alu_out),
+	 .npc(npc),
+	 .pcsource(pcsource),
+	 .alua(alua),
+	 .alub(alub),
+	 .aluc(aluc),
+	 .z(z),
+	 .opa(opa),
+	 .rega(rega),
+	 .state(state),
+	 .selpc(selpc),
+	 .res(res),
+	 .wreg(wreg),
+	 .wn(wn),
+	 .wmem(wmem)
+    );
+
 	integer i;
 	initial begin
 		// Initialize Inputs
 		clock = 0;
 		resetn = 0;
-		inst = 0;
 		mem = 0;
 
 		// Wait 100 ns for global reset to finish
@@ -112,12 +126,12 @@ module testcpu;
 		resetn = 0;
 		#40;
 		// Add stimulus here
-		for (i = 0; i < 30; i = i + 1)
+		for (i = 0; i < 200; i = i + 1)
 		begin
 			mem = 0;
 			clock = !clock;
-			if (clock == 1) inst = rom[pc >> 2];
-			#40;
+			if (clock == 1) mem = rom[pc >> 2];
+			#10;
 		end
 	end
       

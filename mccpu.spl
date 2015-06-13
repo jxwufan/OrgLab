@@ -1,0 +1,14 @@
+[Inputs]
+clock
+resetn
+=frommem[31:0]=
+[Outputs]
+wmem
+=pc[31:0]=
+=alu_out[31:0]=
+=madr[31:0]=
+=tomem[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel mccpu
+

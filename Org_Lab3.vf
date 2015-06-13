@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Org_Lab3.vf
-// /___/   /\     Timestamp : 05/25/2015 13:06:17
+// /___/   /\     Timestamp : 06/13/2015 13:49:44
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath /home/fan/code/OrgLab/ipcore_dir -intstyle ise -family spartan6 -verilog /home/fan/code/OrgLab/Org_Lab3.vf -w /home/fan/code/OrgLab/Org_Lab3.sch
+//Command: sch2hdl -sympath /home/fan/code/final/mccpu/OrgLab/ipcore_dir -intstyle ise -family spartan6 -verilog /home/fan/code/final/mccpu/OrgLab/Org_Lab3.vf -w /home/fan/code/final/mccpu/OrgLab/Org_Lab3.sch
 //Design Name: Org_Lab3
 //Device: spartan6
 //Purpose:
@@ -48,14 +48,12 @@ module Org_Lab3(BTN,
    wire XLXN_41;
    wire [0:0] XLXN_43;
    wire [31:0] XLXN_44;
-   wire XLXN_45;
    wire [9:0] XLXN_46;
    wire XLXN_52;
    wire XLXN_53;
    wire [31:0] XLXN_57;
    wire XLXN_60;
    wire XLXN_61;
-   wire [31:0] XLXN_62;
    wire [31:0] XLXN_63;
    wire [31:0] XLXN_64;
    wire [31:0] XLXN_65;
@@ -64,7 +62,9 @@ module Org_Lab3(BTN,
    wire [31:0] XLXN_73;
    wire [1:0] XLXN_77;
    wire [31:0] XLXN_78;
-   wire XLXN_79;
+   wire [31:0] XLXN_87;
+   wire XLXN_88;
+   wire XLXN_91;
    wire [7:0] LED_DUMMY;
    
    assign LED[7:0] = LED_DUMMY[7:0];
@@ -76,7 +76,7 @@ module Org_Lab3(BTN,
              .dina(XLXN_44[31:0]), 
              .wea(XLXN_43[0]), 
              .douta(XLXN_57[31:0]));
-   MIO_BUS  U4 (.addr_bus(XLXN_62[31:0]), 
+   MIO_BUS  U4 (.addr_bus(XLXN_87[31:0]), 
                .BTN(button_out[3:0]), 
                .clk(clk_50mhz), 
                .counter_out(XLXN_73[31:0]), 
@@ -85,7 +85,7 @@ module Org_Lab3(BTN,
                .counter2_out(XLXN_61), 
                .Cpu_data2bus(XLXN_63[31:0]), 
                .led_out(LED_DUMMY[7:0]), 
-               .mem_w(XLXN_45), 
+               .mem_w(XLXN_91), 
                .ram_data_out(XLXN_57[31:0]), 
                .rst(button_out[0]), 
                .SW(SW_OK[7:0]), 
@@ -111,7 +111,7 @@ module Org_Lab3(BTN,
                         .Test_data1({N0, N0, PC_out[31:2]}), 
                         .Test_data2(XLXN_73[31:0]), 
                         .Test_data3(XLXN_65[31:0]), 
-                        .Test_data4(XLXN_62[31:0]), 
+                        .Test_data4(XLXN_87[31:0]), 
                         .Test_data5(XLXN_63[31:0]), 
                         .Test_data6(XLXN_64[31:0]), 
                         .Test_data7(PC_out[31:0]), 
@@ -137,7 +137,7 @@ module Org_Lab3(BTN,
                .rst(button_out[0]), 
                .SW2(SW_OK[2]), 
                .clkdiv(clkdiv[31:0]), 
-               .Clk_CPU(XLXN_79));
+               .Clk_CPU(XLXN_88));
    Anti_jitter  U9 (.button(BTN[3:0]), 
                    .clk(clk_50mhz), 
                    .SW(SW[7:0]), 
@@ -157,23 +157,16 @@ module Org_Lab3(BTN,
                   .counter1_OUT(XLXN_60), 
                   .counter2_OUT(XLXN_61));
    VCC  XLXI_11 (.P(V5));
-   INV  XLXI_12 (.I(XLXN_79), 
+   INV  XLXI_12 (.I(XLXN_88), 
                 .O(XLXN_37));
    INV  XLXI_13 (.I(clk_50mhz), 
                 .O(XLXN_41));
-   sccpu_dataflow  XLXI_14 (.clock(XLXN_79), 
-                           .inst(XLXN_65[31:0]), 
-                           .mem(XLXN_64[31:0]), 
-                           .resetn(button_out[0]), 
-                           .alua(), 
-                           .alub(), 
-                           .alu_mem(), 
-                           .alu_out(XLXN_62[31:0]), 
-                           .data(XLXN_63[31:0]), 
-                           .pc(PC_out[31:0]), 
-                           .ra(), 
-                           .res(), 
-                           .wmem(XLXN_45), 
-                           .wn(), 
-                           .wreg());
+   mccpu  XLXI_16 (.clock(XLXN_88), 
+                  .frommem(XLXN_64[31:0]), 
+                  .resetn(button_out[0]), 
+                  .alu_out(), 
+                  .madr(XLXN_87[31:0]), 
+                  .pc(PC_out[31:0]), 
+                  .tomem(XLXN_63[31:0]), 
+                  .wmem(XLXN_91));
 endmodule

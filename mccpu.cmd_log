@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/fan/code/final/mccpu/OrgLab/mccpu.v -lang verilog -prj Org_Lab3 -o mccpu.spl -module mccpu -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 mccpu.spl /home/fan/code/final/mccpu/OrgLab/mccpu.sym 

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/fan/code/OrgLab/Org_Lab3.ncd
-OUTFILE=/home/fan/code/OrgLab/Org_Lab3.bit
+INFILE=/home/fan/code/final/mccpu/OrgLab/Org_Lab3.ncd
+OUTFILE=/home/fan/code/final/mccpu/OrgLab/Org_Lab3.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=/home/fan/code/OrgLab
+WORKINGDIR=/home/fan/code/final/mccpu/OrgLab
 LICENSE=WebPack
 USER_INFO=210946127_0_0_770

@@ -1,3 +1,9 @@
-select figure at 400 2390 8 -branches -sn=1
-select figure at 383 2498 8 -branches -sn=1
-select figure at 955 1409 8 -branches -sn=1
+select figure at 424 1309 8 -branches -sn=1
+select figure at 1104 1474 8 -branches -sn=1
+select figure at 914 1277 8 -branches -sn=1
+select figure at 437 1063 8 -branches -sn=1
+select figure at 470 1184 8 -branches -sn=1
+select figure at 408 1153 8 -branches -sn=1
+select figure at 942 1118 8 -branches -sn=1
+select figure at 1455 686 8 -branches -sn=1
+select figure at 709 1459 8 -branches -sn=1

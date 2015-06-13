@@ -37,18 +37,18 @@ Setup/Hold to clock clk_50mhz
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-BTN<0>      |    6.645(R)|      SLOW  |   -0.636(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
-BTN<1>      |    8.880(R)|      SLOW  |   -1.393(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-BTN<2>      |    5.566(R)|      SLOW  |   -1.022(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-BTN<3>      |    5.847(R)|      SLOW  |   -1.009(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SW<0>       |    7.058(R)|      SLOW  |   -1.003(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SW<1>       |    7.604(R)|      SLOW  |   -0.846(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
-SW<2>       |    6.761(R)|      SLOW  |   -0.616(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
-SW<3>       |    7.399(R)|      SLOW  |   -0.693(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
-SW<4>       |    6.929(R)|      SLOW  |   -0.676(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
-SW<5>       |    6.979(R)|      SLOW  |   -0.702(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
-SW<6>       |    6.861(R)|      SLOW  |   -1.153(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SW<7>       |    7.556(R)|      SLOW  |   -1.150(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+BTN<0>      |    4.828(R)|      SLOW  |   -0.476(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
+BTN<1>      |    5.534(R)|      SLOW  |   -0.955(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+BTN<2>      |    3.787(R)|      SLOW  |   -0.074(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
+BTN<3>      |    3.571(R)|      SLOW  |   -0.367(R)|      SLOW  |clk_50mhz_BUFGP   |   0.000|
+SW<0>       |    7.020(R)|      SLOW  |   -1.801(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<1>       |    6.675(R)|      SLOW  |   -1.433(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<2>       |    5.954(R)|      SLOW  |   -1.137(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<3>       |    6.766(R)|      SLOW  |   -1.456(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<4>       |    7.024(R)|      SLOW  |   -1.172(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<5>       |    6.853(R)|      SLOW  |   -1.238(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<6>       |    5.990(R)|      SLOW  |   -1.011(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SW<7>       |    7.188(R)|      SLOW  |   -1.623(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk_50mhz to Pad
@@ -56,18 +56,18 @@ Clock clk_50mhz to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-AN<0>       |         9.962(R)|      SLOW  |         5.222(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-AN<1>       |        10.139(R)|      SLOW  |         5.338(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-AN<2>       |         9.521(R)|      SLOW  |         5.144(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-AN<3>       |         9.604(R)|      SLOW  |         5.074(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<0>  |        13.112(R)|      SLOW  |         5.537(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<1>  |        13.095(R)|      SLOW  |         5.652(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<2>  |        12.918(R)|      SLOW  |         6.086(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<3>  |        13.590(R)|      SLOW  |         5.645(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<4>  |        13.214(R)|      SLOW  |         5.595(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<5>  |        13.120(R)|      SLOW  |         5.414(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<6>  |        13.208(R)|      SLOW  |         5.580(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
-SEGMENT<7>  |        11.739(R)|      SLOW  |         5.616(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+AN<0>       |        10.030(R)|      SLOW  |         5.510(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+AN<1>       |         9.922(R)|      SLOW  |         5.380(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+AN<2>       |         9.783(R)|      SLOW  |         5.383(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+AN<3>       |        10.400(R)|      SLOW  |         5.890(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<0>  |        14.352(R)|      SLOW  |         6.761(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<1>  |        13.711(R)|      SLOW  |         6.780(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<2>  |        13.678(R)|      SLOW  |         6.614(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<3>  |        14.557(R)|      SLOW  |         6.778(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<4>  |        14.375(R)|      SLOW  |         6.886(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<5>  |        14.178(R)|      SLOW  |         6.884(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<6>  |        14.367(R)|      SLOW  |         7.013(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
+SEGMENT<7>  |        13.213(R)|      SLOW  |         5.741(R)|      FAST  |clk_50mhz_BUFGP   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_50mhz
@@ -75,18 +75,18 @@ Clock to Setup on destination clock clk_50mhz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_50mhz      |    7.609|         |         |   20.504|
+clk_50mhz      |    5.533|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon May 25 13:32:08 2015 
+Analysis completed Sat Jun 13 17:31:54 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 436 MB
+Peak Memory Usage: 434 MB
 
 
 
